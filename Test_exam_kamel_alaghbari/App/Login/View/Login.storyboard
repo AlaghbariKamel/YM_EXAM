@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="Y6W-OH-hqX" customClass="LoginVC" customModule="Test_exam_kamel_alaghbari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_circle" translatesAutoresizingMaskIntoConstraints="NO" id="TMl-Js-YDW">
+                                <rect key="frame" x="263" y="0.0" width="130" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="Iba-b4-Byv"/>
+                                    <constraint firstAttribute="width" constant="130" id="bog-18-JAK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8J-bN-e0W">
+                                <rect key="frame" x="333" y="50" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Xe5-hf-wfT"/>
+                                    <constraint firstAttribute="width" constant="40" id="qih-yb-MBk"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="globe" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="globe" catalog="system"/>
+                                <connections>
+                                    <action selector="btnSetLanuage:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="i80-7s-8Jv"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnxRestaurant_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ig4-pI-cIS">
+                                <rect key="frame" x="26" y="64" width="170" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="2id-r5-GEY"/>
+                                    <constraint firstAttribute="width" constant="170" id="75g-XI-kab"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR0-ms-Evd" customClass="CustomLabel" customModule="Test_exam_kamel_alaghbari" customModuleProvider="target">
+                                <rect key="frame" x="35" y="270" width="323" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ram-Br-xfm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.30980392156862746" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localize" value="welcomeBack"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log back into your account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oI-dg-KM7" customClass="CustomLabel" customModule="Test_exam_kamel_alaghbari" customModuleProvider="target">
+                                <rect key="frame" x="35" y="320" width="323" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="yUj-hz-5YD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localize" value="logoBack"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPt-19-iia" customClass="CustomTextField" customModule="Test_exam_kamel_alaghbari" customModuleProvider="target">
+                                <rect key="frame" x="30" y="430" width="333" height="45"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.98039215690000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="GH9-09-Hg6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.91372549020000005" green="0.98039215690000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceholder" value="password"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVd-Xp-4mf" customClass="CustomButton" customModule="Test_exam_kamel_alaghbari" customModuleProvider="target">
+                                <rect key="frame" x="265" y="495" width="120" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3CT-39-BG9"/>
+                                    <constraint firstAttribute="width" constant="120" id="wDv-sz-kY0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show more">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.30980392159999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localize" value="showMore"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qwe-xW-fZW" customClass="CustomButton" customModule="Test_exam_kamel_alaghbari" customModuleProvider="target">
+                                <rect key="frame" x="30" y="560" width="333" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.30980392159999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="kzz-xV-jBl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Log in">
+                                    <color key="baseBackgroundColor" red="0.0" green="0.30980392159999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localize" value="login"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9jh-1h-H3a"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delivery" translatesAutoresizingMaskIntoConstraints="NO" id="bx3-FR-vxz">
+                                <rect key="frame" x="99" y="645" width="195" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="Ajd-XQ-g86"/>
+                                    <constraint firstAttribute="width" constant="195" id="DWC-rl-7L6"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="User ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iVf-kL-qjf" customClass="CustomTextField" customModule="Test_exam_kamel_alaghbari" customModuleProvider="target">
+                                <rect key="frame" x="30" y="370" width="333" height="45"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.98039215690000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Ce8-tt-mvI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.91372549020000005" green="0.98039215690000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceholder" value="userId"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aVd-Xp-4mf" firstAttribute="top" secondItem="uPt-19-iia" secondAttribute="bottom" constant="20" id="0lo-5D-xWI"/>
+                            <constraint firstItem="bx3-FR-vxz" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="1xZ-4q-6Pe"/>
+                            <constraint firstAttribute="trailing" secondItem="TMl-Js-YDW" secondAttribute="trailing" id="9h3-tQ-puS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dR0-ms-Evd" secondAttribute="trailing" constant="35" id="AUA-6H-QyH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="iVf-kL-qjf" secondAttribute="trailing" constant="30" id="Cj7-lv-E5A"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7oI-dg-KM7" secondAttribute="trailing" constant="35" id="HbJ-Ky-FVG"/>
+                            <constraint firstItem="L8J-bN-e0W" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="50" id="Hhb-0w-wwH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Qwe-xW-fZW" secondAttribute="trailing" constant="30" id="Igd-Mu-0RY"/>
+                            <constraint firstItem="Ig4-pI-cIS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="26" id="QXP-aI-Vci"/>
+                            <constraint firstItem="Qwe-xW-fZW" firstAttribute="top" secondItem="aVd-Xp-4mf" secondAttribute="bottom" constant="30" id="Tzh-il-Gi0"/>
+                            <constraint firstItem="dR0-ms-Evd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="VNp-PT-wHG"/>
+                            <constraint firstItem="7oI-dg-KM7" firstAttribute="top" secondItem="dR0-ms-Evd" secondAttribute="bottom" constant="10" id="awd-vb-ce7"/>
+                            <constraint firstItem="dR0-ms-Evd" firstAttribute="top" secondItem="Ig4-pI-cIS" secondAttribute="bottom" constant="130" id="azX-1X-NXY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="L8J-bN-e0W" secondAttribute="trailing" constant="20" id="cSs-h9-ISU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aVd-Xp-4mf" secondAttribute="trailing" constant="8" id="cjZ-Mv-n6k"/>
+                            <constraint firstItem="TMl-Js-YDW" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="ew3-hv-SQb"/>
+                            <constraint firstItem="Qwe-xW-fZW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="hKW-Aj-4Mv"/>
+                            <constraint firstItem="uPt-19-iia" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="hnM-Qx-idB"/>
+                            <constraint firstItem="7oI-dg-KM7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="iLz-yu-i25"/>
+                            <constraint firstItem="Ig4-pI-cIS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="ndx-Ze-mDL"/>
+                            <constraint firstItem="iVf-kL-qjf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="pGu-vJ-ohr"/>
+                            <constraint firstItem="iVf-kL-qjf" firstAttribute="top" secondItem="7oI-dg-KM7" secondAttribute="bottom" constant="30" id="ubJ-HT-Avh"/>
+                            <constraint firstItem="bx3-FR-vxz" firstAttribute="top" secondItem="Qwe-xW-fZW" secondAttribute="bottom" constant="40" id="vVm-q1-2te"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uPt-19-iia" secondAttribute="trailing" constant="30" id="wv6-IS-3ax"/>
+                            <constraint firstItem="uPt-19-iia" firstAttribute="top" secondItem="iVf-kL-qjf" secondAttribute="bottom" constant="15" id="z4D-rB-udP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnShowMore" destination="aVd-Xp-4mf" id="tQC-Nd-E4s"/>
+                        <outlet property="buttonLogin" destination="Qwe-xW-fZW" id="5IV-NN-8OJ"/>
+                        <outlet property="imgLogo" destination="TMl-Js-YDW" id="56E-bg-uaq"/>
+                        <outlet property="lbLogBack" destination="7oI-dg-KM7" id="DIf-sQ-KYR"/>
+                        <outlet property="lbWlecomBack" destination="dR0-ms-Evd" id="YW0-Ir-Jeq"/>
+                        <outlet property="txtPassword" destination="uPt-19-iia" id="Z4y-cB-KYX"/>
+                        <outlet property="txtUserId" destination="iVf-kL-qjf" id="Fg8-Aw-vX9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="OnxRestaurant_Logo" width="170" height="74"/>
+        <image name="delivery" width="195" height="170"/>
+        <image name="globe" catalog="system" width="128" height="123"/>
+        <image name="ic_circle" width="121" height="127"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

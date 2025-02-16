@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Test_exam_kamel_alaghbari
+
+  Created by Kamel Alaghbari on 06/02/2025.
+  
+*/
+
+"login" = "تسجيل الدخول";
+"userId" = "معرّف المستخدم";
+"password" = "كلمة المرور";
+"welcomeBack" = "مرحباً بعودتك!";
+"logoBack" = "سجّل الدخول مرة أخرى إلى حسابك";
+"showMore" = "عرض المزيد";
+"others" = "أخرى";
+"new" = "جديد";
+

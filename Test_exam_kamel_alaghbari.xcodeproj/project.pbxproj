@@ -1,0 +1,1154 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B250427D0E2C14529ADB84E /* Pods_Test_exam_kamel_alaghbari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22601B451002AED4731DD114 /* Pods_Test_exam_kamel_alaghbari.framework */; };
+		61DB8A28DFE40AA979841E3B /* Pods_Test_exam_kamel_alaghbari_Test_exam_kamel_alaghbariUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061FA082FF1E9BA07DAB436A /* Pods_Test_exam_kamel_alaghbari_Test_exam_kamel_alaghbariUITests.framework */; };
+		A95A38952D541CE000C535F7 /* SetLanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A38942D541CE000C535F7 /* SetLanguageVC.swift */; };
+		A95A38972D541E7500C535F7 /* AlertLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A38962D541E6C00C535F7 /* AlertLanguage.swift */; };
+		A95A38992D541FF300C535F7 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A38982D541FF200C535F7 /* LocalizationManager.swift */; };
+		A95A389B2D54203D00C535F7 /* LocalizationKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A389A2D54203B00C535F7 /* LocalizationKey.swift */; };
+		A95A389D2D5420AB00C535F7 /* SharedDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A389C2D5420A000C535F7 /* SharedDefault.swift */; };
+		A95A38A22D54228C00C535F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A95A38A02D54228C00C535F7 /* Localizable.strings */; };
+		A9DA98D02D533E7500A3A436 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA98CD2D533E7500A3A436 /* SplashVC.swift */; };
+		A9DA98D32D53408400A3A436 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA98D22D53408400A3A436 /* LoginVC.swift */; };
+		A9DA98D52D53409300A3A436 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DA98D42D53409300A3A436 /* Login.storyboard */; };
+		A9DA98D72D5340C100A3A436 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DA98D62D5340C100A3A436 /* Splash.storyboard */; };
+		A9DA98D92D5341B200A3A436 /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA98D82D5341A900A3A436 /* CustomUI.swift */; };
+		A9E40EAF2D534E0400393A2D /* SetLanguage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E40EAE2D534E0400393A2D /* SetLanguage.storyboard */; };
+		A9E40EB22D53534900393A2D /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E40EB12D53534900393A2D /* Order.storyboard */; };
+		A9E40EBB2D535B9300393A2D /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EB92D535B9300393A2D /* OrderTableViewCell.swift */; };
+		A9E40EBC2D535B9300393A2D /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9E40EBA2D535B9300393A2D /* OrderTableViewCell.xib */; };
+		A9E40ECA2D5368B900393A2D /* LoadViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EC92D5368B400393A2D /* LoadViews.swift */; };
+		A9E40ECE2D53696600393A2D /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40ECD2D53696600393A2D /* OrderVC.swift */; };
+		A9E40ED12D53718100393A2D /* DeliveryBillsItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40ED02D53718000393A2D /* DeliveryBillsItems.swift */; };
+		A9E40ED32D5373F200393A2D /* APILogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40ED22D5373E300393A2D /* APILogin.swift */; };
+		A9E40ED52D5373FC00393A2D /* APILoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40ED42D5373F700393A2D /* APILoginNetwork.swift */; };
+		A9E40ED72D53750F00393A2D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40ED62D53750B00393A2D /* LoginResponse.swift */; };
+		A9E40EDC2D5376D600393A2D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EDB2D5376D200393A2D /* LoginViewModel.swift */; };
+		A9E40EDE2D53777400393A2D /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EDD2D53776F00393A2D /* LoginRequest.swift */; };
+		A9E40EE22D537E8100393A2D /* APIOrderNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EE12D537E6D00393A2D /* APIOrderNetwork.swift */; };
+		A9E40EE42D537E8A00393A2D /* APIOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EE32D537E8500393A2D /* APIOrder.swift */; };
+		A9E40EE62D537FD200393A2D /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EE52D537FCD00393A2D /* OrderViewModel.swift */; };
+		A9E40EE82D53808D00393A2D /* OrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EE72D53808800393A2D /* OrderRequest.swift */; };
+		A9E40EF12D538D1100393A2D /* OrderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EF02D538D0900393A2D /* OrderEntity.swift */; };
+		A9E40EF32D538D5400393A2D /* DbResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EF22D538D4F00393A2D /* DbResult.swift */; };
+		A9E40EF62D53925900393A2D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EF52D53925800393A2D /* main.swift */; };
+		A9E40EF82D53928500393A2D /* TimerApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EF72D53928400393A2D /* TimerApplication.swift */; };
+		A9E40EFA2D5392F900393A2D /* CheckAppLogout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EF92D5392F300393A2D /* CheckAppLogout.swift */; };
+		A9F77A492D52C91500F61931 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A392D52C91500F61931 /* AppCoordinator.swift */; };
+		A9F77A4A2D52C91500F61931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A3A2D52C91500F61931 /* AppDelegate.swift */; };
+		A9F77A4B2D52C91500F61931 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A412D52C91500F61931 /* NetworkManager.swift */; };
+		A9F77A4C2D52C91500F61931 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A422D52C91500F61931 /* SceneDelegate.swift */; };
+		A9F77A4E2D52C91500F61931 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A442D52C91500F61931 /* User.swift */; };
+		A9F77A4F2D52C91500F61931 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A452D52C91500F61931 /* UserDetailsViewController.swift */; };
+		A9F77A502D52C91500F61931 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A462D52C91500F61931 /* UsersViewController.swift */; };
+		A9F77A512D52C91500F61931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F77A3B2D52C91500F61931 /* Assets.xcassets */; };
+		A9F77A532D52C91500F61931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F77A3E2D52C91500F61931 /* LaunchScreen.storyboard */; };
+		A9F77A542D52C91500F61931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F77A402D52C91500F61931 /* Main.storyboard */; };
+		A9F77A552D52C91500F61931 /* Test_exam_kamel_alaghbari.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A432D52C91500F61931 /* Test_exam_kamel_alaghbari.xcdatamodeld */; };
+		A9F77A872D52C9C300F61931 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A822D52C9C300F61931 /* PostViewModel.swift */; };
+		A9F77A882D52C9C300F61931 /* ResponsePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A802D52C9C300F61931 /* ResponsePost.swift */; };
+		A9F77A892D52C9C300F61931 /* ResponseHandler+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A7B2D52C9C300F61931 /* ResponseHandler+Extension.swift */; };
+		A9F77A8A2D52C9C300F61931 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A7C2D52C9C300F61931 /* ServiceError.swift */; };
+		A9F77A8C2D52C9C300F61931 /* RequestHandler+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A7A2D52C9C300F61931 /* RequestHandler+Extension.swift */; };
+		A9F77A8D2D52C9C300F61931 /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A782D52C9C300F61931 /* APIPath.swift */; };
+		A9F77A8E2D52C9C300F61931 /* NetworkPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A7E2D52C9C300F61931 /* NetworkPostModel.swift */; };
+		A9F77A8F2D52C9C300F61931 /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A792D52C9C300F61931 /* APITarget.swift */; };
+		A9F77A902D52C9C300F61931 /* PostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A7F2D52C9C300F61931 /* PostAPI.swift */; };
+		A9F77A912D52C9C300F61931 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A752D52C9C300F61931 /* APIEnvironment.swift */; };
+		A9F77A922D52C9C300F61931 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A762D52C9C300F61931 /* APIHandler.swift */; };
+		A9F77A932D52C9C300F61931 /* APILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A772D52C9C300F61931 /* APILoader.swift */; };
+		A9F77A952D52CAF000F61931 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A942D52CAED00F61931 /* APIConstant.swift */; };
+		A9F77A982D52D3D000F61931 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A972D52D3BA00F61931 /* JsonData.swift */; };
+		A9F77A9B2D52D5C600F61931 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A9A2D52D5C300F61931 /* PostsViewController.swift */; };
+		A9F77A9D2D52D80200F61931 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A9C2D52D7F800F61931 /* AlertMessage.swift */; };
+		A9F77A9F2D52D83A00F61931 /* InternetConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A9E2D52D83700F61931 /* InternetConnectionManager.swift */; };
+		A9F77AAD2D52E02B00F61931 /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77AAC2D52E02600F61931 /* PostDetailsViewController.swift */; };
+		A9F77AAF2D52E27600F61931 /* PostEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77AAE2D52E27400F61931 /* PostEntryViewController.swift */; };
+		CAB3AB925AD1B8F33E06A555 /* Pods_Test_exam_kamel_alaghbariTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2135829386E3DE114337B3A0 /* Pods_Test_exam_kamel_alaghbariTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9321A4F2D5239F900B9D002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9321A2D2D5239F700B9D002 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9321A342D5239F700B9D002;
+			remoteInfo = Test_exam_kamel_alaghbari;
+		};
+		A9321A592D5239F900B9D002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9321A2D2D5239F700B9D002 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9321A342D5239F700B9D002;
+			remoteInfo = Test_exam_kamel_alaghbari;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		061FA082FF1E9BA07DAB436A /* Pods_Test_exam_kamel_alaghbari_Test_exam_kamel_alaghbariUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_exam_kamel_alaghbari_Test_exam_kamel_alaghbariUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED3E74A47C3EA56C0C66718 /* Pods-Test_exam_kamel_alaghbari.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_exam_kamel_alaghbari.debug.xcconfig"; path = "Target Support Files/Pods-Test_exam_kamel_alaghbari/Pods-Test_exam_kamel_alaghbari.debug.xcconfig"; sourceTree = "<group>"; };
+		2135829386E3DE114337B3A0 /* Pods_Test_exam_kamel_alaghbariTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_exam_kamel_alaghbariTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22601B451002AED4731DD114 /* Pods_Test_exam_kamel_alaghbari.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_exam_kamel_alaghbari.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		512A703313E93F069E9841B4 /* Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests.debug.xcconfig"; path = "Target Support Files/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		59D7B4463C5DB1FE81FE5DBB /* Pods-Test_exam_kamel_alaghbariTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_exam_kamel_alaghbariTests.debug.xcconfig"; path = "Target Support Files/Pods-Test_exam_kamel_alaghbariTests/Pods-Test_exam_kamel_alaghbariTests.debug.xcconfig"; sourceTree = "<group>"; };
+		884309074D21067B0E939B5C /* Pods-Test_exam_kamel_alaghbari.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_exam_kamel_alaghbari.release.xcconfig"; path = "Target Support Files/Pods-Test_exam_kamel_alaghbari/Pods-Test_exam_kamel_alaghbari.release.xcconfig"; sourceTree = "<group>"; };
+		8F1D5C20858F8B9EEF33DD68 /* Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests.release.xcconfig"; path = "Target Support Files/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A9321A352D5239F700B9D002 /* Test_exam_kamel_alaghbari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_exam_kamel_alaghbari.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9321A4E2D5239F900B9D002 /* Test_exam_kamel_alaghbariTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_exam_kamel_alaghbariTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9321A582D5239F900B9D002 /* Test_exam_kamel_alaghbariUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_exam_kamel_alaghbariUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95A38942D541CE000C535F7 /* SetLanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLanguageVC.swift; sourceTree = "<group>"; };
+		A95A38962D541E6C00C535F7 /* AlertLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertLanguage.swift; sourceTree = "<group>"; };
+		A95A38982D541FF200C535F7 /* LocalizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
+		A95A389A2D54203B00C535F7 /* LocalizationKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationKey.swift; sourceTree = "<group>"; };
+		A95A389C2D5420A000C535F7 /* SharedDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDefault.swift; sourceTree = "<group>"; };
+		A95A38A12D54228C00C535F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A95A38A32D5423B700C535F7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9DA98CD2D533E7500A3A436 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		A9DA98D22D53408400A3A436 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		A9DA98D42D53409300A3A436 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A9DA98D62D5340C100A3A436 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		A9DA98D82D5341A900A3A436 /* CustomUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUI.swift; sourceTree = "<group>"; };
+		A9E40EAE2D534E0400393A2D /* SetLanguage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetLanguage.storyboard; sourceTree = "<group>"; };
+		A9E40EB12D53534900393A2D /* Order.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
+		A9E40EB92D535B9300393A2D /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		A9E40EBA2D535B9300393A2D /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		A9E40EC92D5368B400393A2D /* LoadViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViews.swift; sourceTree = "<group>"; };
+		A9E40ECD2D53696600393A2D /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
+		A9E40ED02D53718000393A2D /* DeliveryBillsItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryBillsItems.swift; sourceTree = "<group>"; };
+		A9E40ED22D5373E300393A2D /* APILogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILogin.swift; sourceTree = "<group>"; };
+		A9E40ED42D5373F700393A2D /* APILoginNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILoginNetwork.swift; sourceTree = "<group>"; };
+		A9E40ED62D53750B00393A2D /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		A9E40EDB2D5376D200393A2D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A9E40EDD2D53776F00393A2D /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		A9E40EE12D537E6D00393A2D /* APIOrderNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOrderNetwork.swift; sourceTree = "<group>"; };
+		A9E40EE32D537E8500393A2D /* APIOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOrder.swift; sourceTree = "<group>"; };
+		A9E40EE52D537FCD00393A2D /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		A9E40EE72D53808800393A2D /* OrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRequest.swift; sourceTree = "<group>"; };
+		A9E40EF02D538D0900393A2D /* OrderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderEntity.swift; sourceTree = "<group>"; };
+		A9E40EF22D538D4F00393A2D /* DbResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbResult.swift; sourceTree = "<group>"; };
+		A9E40EF52D53925800393A2D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A9E40EF72D53928400393A2D /* TimerApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerApplication.swift; sourceTree = "<group>"; };
+		A9E40EF92D5392F300393A2D /* CheckAppLogout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAppLogout.swift; sourceTree = "<group>"; };
+		A9F77A392D52C91500F61931 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A9F77A3A2D52C91500F61931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9F77A3B2D52C91500F61931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9F77A3C2D52C91500F61931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9F77A3D2D52C91500F61931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9F77A3F2D52C91500F61931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9F77A412D52C91500F61931 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A9F77A422D52C91500F61931 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A9F77A442D52C91500F61931 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A9F77A452D52C91500F61931 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		A9F77A462D52C91500F61931 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		A9F77A482D52C91500F61931 /* Test_exam_kamel_alaghbari.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test_exam_kamel_alaghbari.xcdatamodel; sourceTree = "<group>"; };
+		A9F77A752D52C9C300F61931 /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
+		A9F77A762D52C9C300F61931 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		A9F77A772D52C9C300F61931 /* APILoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APILoader.swift; sourceTree = "<group>"; };
+		A9F77A782D52C9C300F61931 /* APIPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
+		A9F77A792D52C9C300F61931 /* APITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITarget.swift; sourceTree = "<group>"; };
+		A9F77A7A2D52C9C300F61931 /* RequestHandler+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestHandler+Extension.swift"; sourceTree = "<group>"; };
+		A9F77A7B2D52C9C300F61931 /* ResponseHandler+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResponseHandler+Extension.swift"; sourceTree = "<group>"; };
+		A9F77A7C2D52C9C300F61931 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		A9F77A7E2D52C9C300F61931 /* NetworkPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPostModel.swift; sourceTree = "<group>"; };
+		A9F77A7F2D52C9C300F61931 /* PostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAPI.swift; sourceTree = "<group>"; };
+		A9F77A802D52C9C300F61931 /* ResponsePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsePost.swift; sourceTree = "<group>"; };
+		A9F77A822D52C9C300F61931 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		A9F77A942D52CAED00F61931 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		A9F77A972D52D3BA00F61931 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
+		A9F77A9A2D52D5C300F61931 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		A9F77A9C2D52D7F800F61931 /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		A9F77A9E2D52D83700F61931 /* InternetConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionManager.swift; sourceTree = "<group>"; };
+		A9F77AAC2D52E02600F61931 /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		A9F77AAE2D52E27400F61931 /* PostEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntryViewController.swift; sourceTree = "<group>"; };
+		C132DF1A1A297104F6AC513F /* Pods-Test_exam_kamel_alaghbariTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_exam_kamel_alaghbariTests.release.xcconfig"; path = "Target Support Files/Pods-Test_exam_kamel_alaghbariTests/Pods-Test_exam_kamel_alaghbariTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A9321A512D5239F900B9D002 /* Test_exam_kamel_alaghbariTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Test_exam_kamel_alaghbariTests;
+			sourceTree = "<group>";
+		};
+		A9321A5B2D5239F900B9D002 /* Test_exam_kamel_alaghbariUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Test_exam_kamel_alaghbariUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9321A322D5239F700B9D002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B250427D0E2C14529ADB84E /* Pods_Test_exam_kamel_alaghbari.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9321A4B2D5239F900B9D002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB3AB925AD1B8F33E06A555 /* Pods_Test_exam_kamel_alaghbariTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9321A552D5239F900B9D002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61DB8A28DFE40AA979841E3B /* Pods_Test_exam_kamel_alaghbari_Test_exam_kamel_alaghbariUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F128FFC44F6252B1E0092B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3E74A47C3EA56C0C66718 /* Pods-Test_exam_kamel_alaghbari.debug.xcconfig */,
+				884309074D21067B0E939B5C /* Pods-Test_exam_kamel_alaghbari.release.xcconfig */,
+				512A703313E93F069E9841B4 /* Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests.debug.xcconfig */,
+				8F1D5C20858F8B9EEF33DD68 /* Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests.release.xcconfig */,
+				59D7B4463C5DB1FE81FE5DBB /* Pods-Test_exam_kamel_alaghbariTests.debug.xcconfig */,
+				C132DF1A1A297104F6AC513F /* Pods-Test_exam_kamel_alaghbariTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3C752F922269E807A64B9B61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22601B451002AED4731DD114 /* Pods_Test_exam_kamel_alaghbari.framework */,
+				061FA082FF1E9BA07DAB436A /* Pods_Test_exam_kamel_alaghbari_Test_exam_kamel_alaghbariUITests.framework */,
+				2135829386E3DE114337B3A0 /* Pods_Test_exam_kamel_alaghbariTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9321A2C2D5239F700B9D002 = {
+			isa = PBXGroup;
+			children = (
+				A9F77A472D52C91500F61931 /* Test_exam_kamel_alaghbari */,
+				A9321A512D5239F900B9D002 /* Test_exam_kamel_alaghbariTests */,
+				A9321A5B2D5239F900B9D002 /* Test_exam_kamel_alaghbariUITests */,
+				A9321A362D5239F700B9D002 /* Products */,
+				0F128FFC44F6252B1E0092B0 /* Pods */,
+				3C752F922269E807A64B9B61 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9321A362D5239F700B9D002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9321A352D5239F700B9D002 /* Test_exam_kamel_alaghbari.app */,
+				A9321A4E2D5239F900B9D002 /* Test_exam_kamel_alaghbariTests.xctest */,
+				A9321A582D5239F900B9D002 /* Test_exam_kamel_alaghbariUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9DA98CC2D533E4700A3A436 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A9DA98CD2D533E7500A3A436 /* SplashVC.swift */,
+				A9DA98D62D5340C100A3A436 /* Splash.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		A9DA98D12D53405500A3A436 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A9E40EDA2D5376BD00393A2D /* View */,
+				A9E40ED82D5376B100393A2D /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A9E40EAD2D534DA200393A2D /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				A95A389C2D5420A000C535F7 /* SharedDefault.swift */,
+				A95A389A2D54203B00C535F7 /* LocalizationKey.swift */,
+				A95A38982D541FF200C535F7 /* LocalizationManager.swift */,
+				A95A38962D541E6C00C535F7 /* AlertLanguage.swift */,
+				A9E40EAE2D534E0400393A2D /* SetLanguage.storyboard */,
+				A95A38942D541CE000C535F7 /* SetLanguageVC.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		A9E40EB02D53533400393A2D /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				A9E40EE02D537E5400393A2D /* ViewModel */,
+				A9E40EDF2D537E4F00393A2D /* View */,
+				A9E40ECF2D53717800393A2D /* Model */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		A9E40ECF2D53717800393A2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9E40EE72D53808800393A2D /* OrderRequest.swift */,
+				A9E40EE32D537E8500393A2D /* APIOrder.swift */,
+				A9E40EE12D537E6D00393A2D /* APIOrderNetwork.swift */,
+				A9E40ED02D53718000393A2D /* DeliveryBillsItems.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9E40ED82D5376B100393A2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9E40EDD2D53776F00393A2D /* LoginRequest.swift */,
+				A9E40ED62D53750B00393A2D /* LoginResponse.swift */,
+				A9E40ED42D5373F700393A2D /* APILoginNetwork.swift */,
+				A9E40ED22D5373E300393A2D /* APILogin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9E40ED92D5376B700393A2D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9E40EDB2D5376D200393A2D /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9E40EDA2D5376BD00393A2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9DA98D22D53408400A3A436 /* LoginVC.swift */,
+				A9DA98D42D53409300A3A436 /* Login.storyboard */,
+				A9E40ED92D5376B700393A2D /* ViewModel */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9E40EDF2D537E4F00393A2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9E40EB12D53534900393A2D /* Order.storyboard */,
+				A9E40EB92D535B9300393A2D /* OrderTableViewCell.swift */,
+				A9E40EBA2D535B9300393A2D /* OrderTableViewCell.xib */,
+				A9E40ECD2D53696600393A2D /* OrderVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9E40EE02D537E5400393A2D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9E40EE52D537FCD00393A2D /* OrderViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9E40EEF2D538D0200393A2D /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				A9E40EF22D538D4F00393A2D /* DbResult.swift */,
+				A9E40EF02D538D0900393A2D /* OrderEntity.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		A9E40EF42D53924D00393A2D /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				A9E40EF92D5392F300393A2D /* CheckAppLogout.swift */,
+				A9E40EF72D53928400393A2D /* TimerApplication.swift */,
+				A9E40EF52D53925800393A2D /* main.swift */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		A9F77A382D52C91500F61931 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A9E40EF42D53924D00393A2D /* AppConfig */,
+				A9E40EEF2D538D0200393A2D /* DB */,
+				A9E40EB02D53533400393A2D /* Order */,
+				A9E40EAD2D534DA200393A2D /* Language */,
+				A9DA98D12D53405500A3A436 /* Login */,
+				A9DA98CC2D533E4700A3A436 /* Splash */,
+				A9F77A962D52D3B300F61931 /* Util */,
+				A9F77A7D2D52C9C300F61931 /* Networking */,
+				A9F77A842D52C9C300F61931 /* Post */,
+				A95A38A02D54228C00C535F7 /* Localizable.strings */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A9F77A472D52C91500F61931 /* Test_exam_kamel_alaghbari */ = {
+			isa = PBXGroup;
+			children = (
+				A9F77A382D52C91500F61931 /* App */,
+				A9F77A392D52C91500F61931 /* AppCoordinator.swift */,
+				A9F77A3A2D52C91500F61931 /* AppDelegate.swift */,
+				A9F77A3B2D52C91500F61931 /* Assets.xcassets */,
+				A9F77A3C2D52C91500F61931 /* Info.plist */,
+				A9F77A3E2D52C91500F61931 /* LaunchScreen.storyboard */,
+				A9F77A402D52C91500F61931 /* Main.storyboard */,
+				A9F77A412D52C91500F61931 /* NetworkManager.swift */,
+				A9F77A422D52C91500F61931 /* SceneDelegate.swift */,
+				A9F77A432D52C91500F61931 /* Test_exam_kamel_alaghbari.xcdatamodeld */,
+				A9F77A442D52C91500F61931 /* User.swift */,
+				A9F77A452D52C91500F61931 /* UserDetailsViewController.swift */,
+				A9F77A462D52C91500F61931 /* UsersViewController.swift */,
+			);
+			path = Test_exam_kamel_alaghbari;
+			sourceTree = "<group>";
+		};
+		A9F77A7D2D52C9C300F61931 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A9F77A942D52CAED00F61931 /* APIConstant.swift */,
+				A9F77A752D52C9C300F61931 /* APIEnvironment.swift */,
+				A9F77A762D52C9C300F61931 /* APIHandler.swift */,
+				A9F77A772D52C9C300F61931 /* APILoader.swift */,
+				A9F77A782D52C9C300F61931 /* APIPath.swift */,
+				A9F77A792D52C9C300F61931 /* APITarget.swift */,
+				A9F77A7A2D52C9C300F61931 /* RequestHandler+Extension.swift */,
+				A9F77A7B2D52C9C300F61931 /* ResponseHandler+Extension.swift */,
+				A9F77A7C2D52C9C300F61931 /* ServiceError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A9F77A812D52C9C300F61931 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9F77A7E2D52C9C300F61931 /* NetworkPostModel.swift */,
+				A9F77A7F2D52C9C300F61931 /* PostAPI.swift */,
+				A9F77A802D52C9C300F61931 /* ResponsePost.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9F77A832D52C9C300F61931 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9F77A822D52C9C300F61931 /* PostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9F77A842D52C9C300F61931 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				A9F77A992D52D5BB00F61931 /* View */,
+				A9F77A832D52C9C300F61931 /* ViewModel */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		A9F77A962D52D3B300F61931 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A9E40EC92D5368B400393A2D /* LoadViews.swift */,
+				A9DA98D82D5341A900A3A436 /* CustomUI.swift */,
+				A9F77A9E2D52D83700F61931 /* InternetConnectionManager.swift */,
+				A9F77A9C2D52D7F800F61931 /* AlertMessage.swift */,
+				A9F77A972D52D3BA00F61931 /* JsonData.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A9F77A992D52D5BB00F61931 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9F77AAE2D52E27400F61931 /* PostEntryViewController.swift */,
+				A9F77AAC2D52E02600F61931 /* PostDetailsViewController.swift */,
+				A9F77A9A2D52D5C300F61931 /* PostsViewController.swift */,
+				A9F77A812D52C9C300F61931 /* Model */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9321A342D5239F700B9D002 /* Test_exam_kamel_alaghbari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9321A612D5239F900B9D002 /* Build configuration list for PBXNativeTarget "Test_exam_kamel_alaghbari" */;
+			buildPhases = (
+				87B320B1BB8859EF0EE1EDBA /* [CP] Check Pods Manifest.lock */,
+				A9321A312D5239F700B9D002 /* Sources */,
+				A9321A322D5239F700B9D002 /* Frameworks */,
+				A9321A332D5239F700B9D002 /* Resources */,
+				CCD85D397662B96BE9F62C96 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test_exam_kamel_alaghbari;
+			productName = Test_exam_kamel_alaghbari;
+			productReference = A9321A352D5239F700B9D002 /* Test_exam_kamel_alaghbari.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9321A4D2D5239F900B9D002 /* Test_exam_kamel_alaghbariTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9321A662D5239F900B9D002 /* Build configuration list for PBXNativeTarget "Test_exam_kamel_alaghbariTests" */;
+			buildPhases = (
+				012EACFE5C558DE7E1E8D91A /* [CP] Check Pods Manifest.lock */,
+				A9321A4A2D5239F900B9D002 /* Sources */,
+				A9321A4B2D5239F900B9D002 /* Frameworks */,
+				A9321A4C2D5239F900B9D002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9321A502D5239F900B9D002 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A9321A512D5239F900B9D002 /* Test_exam_kamel_alaghbariTests */,
+			);
+			name = Test_exam_kamel_alaghbariTests;
+			productName = Test_exam_kamel_alaghbariTests;
+			productReference = A9321A4E2D5239F900B9D002 /* Test_exam_kamel_alaghbariTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9321A572D5239F900B9D002 /* Test_exam_kamel_alaghbariUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9321A692D5239F900B9D002 /* Build configuration list for PBXNativeTarget "Test_exam_kamel_alaghbariUITests" */;
+			buildPhases = (
+				B4D7E1B186D047CFA32F334B /* [CP] Check Pods Manifest.lock */,
+				A9321A542D5239F900B9D002 /* Sources */,
+				A9321A552D5239F900B9D002 /* Frameworks */,
+				A9321A562D5239F900B9D002 /* Resources */,
+				12A2E61F41F129C249C54B99 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9321A5A2D5239F900B9D002 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A9321A5B2D5239F900B9D002 /* Test_exam_kamel_alaghbariUITests */,
+			);
+			name = Test_exam_kamel_alaghbariUITests;
+			productName = Test_exam_kamel_alaghbariUITests;
+			productReference = A9321A582D5239F900B9D002 /* Test_exam_kamel_alaghbariUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9321A2D2D5239F700B9D002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A9321A342D5239F700B9D002 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A9321A4D2D5239F900B9D002 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A9321A342D5239F700B9D002;
+					};
+					A9321A572D5239F900B9D002 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A9321A342D5239F700B9D002;
+					};
+				};
+			};
+			buildConfigurationList = A9321A302D5239F700B9D002 /* Build configuration list for PBXProject "Test_exam_kamel_alaghbari" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+			);
+			mainGroup = A9321A2C2D5239F700B9D002;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A9321A362D5239F700B9D002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9321A342D5239F700B9D002 /* Test_exam_kamel_alaghbari */,
+				A9321A4D2D5239F900B9D002 /* Test_exam_kamel_alaghbariTests */,
+				A9321A572D5239F900B9D002 /* Test_exam_kamel_alaghbariUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9321A332D5239F700B9D002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F77A512D52C91500F61931 /* Assets.xcassets in Resources */,
+				A9F77A532D52C91500F61931 /* LaunchScreen.storyboard in Resources */,
+				A9E40EAF2D534E0400393A2D /* SetLanguage.storyboard in Resources */,
+				A9DA98D52D53409300A3A436 /* Login.storyboard in Resources */,
+				A95A38A22D54228C00C535F7 /* Localizable.strings in Resources */,
+				A9E40EB22D53534900393A2D /* Order.storyboard in Resources */,
+				A9DA98D72D5340C100A3A436 /* Splash.storyboard in Resources */,
+				A9E40EBC2D535B9300393A2D /* OrderTableViewCell.xib in Resources */,
+				A9F77A542D52C91500F61931 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9321A4C2D5239F900B9D002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9321A562D5239F900B9D002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		012EACFE5C558DE7E1E8D91A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test_exam_kamel_alaghbariTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12A2E61F41F129C249C54B99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87B320B1BB8859EF0EE1EDBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test_exam_kamel_alaghbari-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4D7E1B186D047CFA32F334B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCD85D397662B96BE9F62C96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test_exam_kamel_alaghbari/Pods-Test_exam_kamel_alaghbari-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test_exam_kamel_alaghbari/Pods-Test_exam_kamel_alaghbari-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test_exam_kamel_alaghbari/Pods-Test_exam_kamel_alaghbari-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9321A312D5239F700B9D002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F77A492D52C91500F61931 /* AppCoordinator.swift in Sources */,
+				A9E40ED72D53750F00393A2D /* LoginResponse.swift in Sources */,
+				A9E40EF62D53925900393A2D /* main.swift in Sources */,
+				A9F77A982D52D3D000F61931 /* JsonData.swift in Sources */,
+				A9F77A4A2D52C91500F61931 /* AppDelegate.swift in Sources */,
+				A9F77A4B2D52C91500F61931 /* NetworkManager.swift in Sources */,
+				A95A38972D541E7500C535F7 /* AlertLanguage.swift in Sources */,
+				A9F77A552D52C91500F61931 /* Test_exam_kamel_alaghbari.xcdatamodeld in Sources */,
+				A9F77A4C2D52C91500F61931 /* SceneDelegate.swift in Sources */,
+				A9E40EFA2D5392F900393A2D /* CheckAppLogout.swift in Sources */,
+				A9F77A952D52CAF000F61931 /* APIConstant.swift in Sources */,
+				A9F77A9B2D52D5C600F61931 /* PostsViewController.swift in Sources */,
+				A9F77A4E2D52C91500F61931 /* User.swift in Sources */,
+				A95A38992D541FF300C535F7 /* LocalizationManager.swift in Sources */,
+				A95A389B2D54203D00C535F7 /* LocalizationKey.swift in Sources */,
+				A9F77A4F2D52C91500F61931 /* UserDetailsViewController.swift in Sources */,
+				A9F77A9D2D52D80200F61931 /* AlertMessage.swift in Sources */,
+				A95A38952D541CE000C535F7 /* SetLanguageVC.swift in Sources */,
+				A9F77A872D52C9C300F61931 /* PostViewModel.swift in Sources */,
+				A9E40EF12D538D1100393A2D /* OrderEntity.swift in Sources */,
+				A9E40EF32D538D5400393A2D /* DbResult.swift in Sources */,
+				A9F77A882D52C9C300F61931 /* ResponsePost.swift in Sources */,
+				A9DA98D02D533E7500A3A436 /* SplashVC.swift in Sources */,
+				A9F77A892D52C9C300F61931 /* ResponseHandler+Extension.swift in Sources */,
+				A9F77AAF2D52E27600F61931 /* PostEntryViewController.swift in Sources */,
+				A9DA98D32D53408400A3A436 /* LoginVC.swift in Sources */,
+				A9E40EE42D537E8A00393A2D /* APIOrder.swift in Sources */,
+				A9F77A8A2D52C9C300F61931 /* ServiceError.swift in Sources */,
+				A9F77A8C2D52C9C300F61931 /* RequestHandler+Extension.swift in Sources */,
+				A9E40ECE2D53696600393A2D /* OrderVC.swift in Sources */,
+				A9F77A8D2D52C9C300F61931 /* APIPath.swift in Sources */,
+				A9F77A8E2D52C9C300F61931 /* NetworkPostModel.swift in Sources */,
+				A9F77A8F2D52C9C300F61931 /* APITarget.swift in Sources */,
+				A9DA98D92D5341B200A3A436 /* CustomUI.swift in Sources */,
+				A9E40EE82D53808D00393A2D /* OrderRequest.swift in Sources */,
+				A9F77A902D52C9C300F61931 /* PostAPI.swift in Sources */,
+				A95A389D2D5420AB00C535F7 /* SharedDefault.swift in Sources */,
+				A9E40ECA2D5368B900393A2D /* LoadViews.swift in Sources */,
+				A9E40EF82D53928500393A2D /* TimerApplication.swift in Sources */,
+				A9E40EDE2D53777400393A2D /* LoginRequest.swift in Sources */,
+				A9E40ED32D5373F200393A2D /* APILogin.swift in Sources */,
+				A9F77AAD2D52E02B00F61931 /* PostDetailsViewController.swift in Sources */,
+				A9F77A912D52C9C300F61931 /* APIEnvironment.swift in Sources */,
+				A9F77A922D52C9C300F61931 /* APIHandler.swift in Sources */,
+				A9E40EE62D537FD200393A2D /* OrderViewModel.swift in Sources */,
+				A9E40EE22D537E8100393A2D /* APIOrderNetwork.swift in Sources */,
+				A9E40ED12D53718100393A2D /* DeliveryBillsItems.swift in Sources */,
+				A9F77A932D52C9C300F61931 /* APILoader.swift in Sources */,
+				A9F77A502D52C91500F61931 /* UsersViewController.swift in Sources */,
+				A9E40EBB2D535B9300393A2D /* OrderTableViewCell.swift in Sources */,
+				A9F77A9F2D52D83A00F61931 /* InternetConnectionManager.swift in Sources */,
+				A9E40EDC2D5376D600393A2D /* LoginViewModel.swift in Sources */,
+				A9E40ED52D5373FC00393A2D /* APILoginNetwork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9321A4A2D5239F900B9D002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9321A542D5239F900B9D002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9321A502D5239F900B9D002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9321A342D5239F700B9D002 /* Test_exam_kamel_alaghbari */;
+			targetProxy = A9321A4F2D5239F900B9D002 /* PBXContainerItemProxy */;
+		};
+		A9321A5A2D5239F900B9D002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9321A342D5239F700B9D002 /* Test_exam_kamel_alaghbari */;
+			targetProxy = A9321A592D5239F900B9D002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A95A38A02D54228C00C535F7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A95A38A12D54228C00C535F7 /* en */,
+				A95A38A32D5423B700C535F7 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A9F77A3E2D52C91500F61931 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9F77A3D2D52C91500F61931 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A9F77A402D52C91500F61931 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9F77A3F2D52C91500F61931 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9321A622D5239F900B9D002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED3E74A47C3EA56C0C66718 /* Pods-Test_exam_kamel_alaghbari.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Test_exam_kamel_alaghbari/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sty.exam-kamel.Test-exam-kamel-alaghbari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9321A632D5239F900B9D002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 884309074D21067B0E939B5C /* Pods-Test_exam_kamel_alaghbari.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Test_exam_kamel_alaghbari/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sty.exam-kamel.Test-exam-kamel-alaghbari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9321A642D5239F900B9D002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9321A652D5239F900B9D002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9321A672D5239F900B9D002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59D7B4463C5DB1FE81FE5DBB /* Pods-Test_exam_kamel_alaghbariTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sty.exam-kamel.Test-exam-kamel-alaghbariTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test_exam_kamel_alaghbari.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Test_exam_kamel_alaghbari";
+			};
+			name = Debug;
+		};
+		A9321A682D5239F900B9D002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C132DF1A1A297104F6AC513F /* Pods-Test_exam_kamel_alaghbariTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sty.exam-kamel.Test-exam-kamel-alaghbariTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test_exam_kamel_alaghbari.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Test_exam_kamel_alaghbari";
+			};
+			name = Release;
+		};
+		A9321A6A2D5239F900B9D002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 512A703313E93F069E9841B4 /* Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sty.exam-kamel.Test-exam-kamel-alaghbariUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Test_exam_kamel_alaghbari;
+			};
+			name = Debug;
+		};
+		A9321A6B2D5239F900B9D002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1D5C20858F8B9EEF33DD68 /* Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sty.exam-kamel.Test-exam-kamel-alaghbariUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Test_exam_kamel_alaghbari;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9321A302D5239F700B9D002 /* Build configuration list for PBXProject "Test_exam_kamel_alaghbari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9321A642D5239F900B9D002 /* Debug */,
+				A9321A652D5239F900B9D002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9321A612D5239F900B9D002 /* Build configuration list for PBXNativeTarget "Test_exam_kamel_alaghbari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9321A622D5239F900B9D002 /* Debug */,
+				A9321A632D5239F900B9D002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9321A662D5239F900B9D002 /* Build configuration list for PBXNativeTarget "Test_exam_kamel_alaghbariTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9321A672D5239F900B9D002 /* Debug */,
+				A9321A682D5239F900B9D002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9321A692D5239F900B9D002 /* Build configuration list for PBXNativeTarget "Test_exam_kamel_alaghbariUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9321A6A2D5239F900B9D002 /* Debug */,
+				A9321A6B2D5239F900B9D002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A9F77A432D52C91500F61931 /* Test_exam_kamel_alaghbari.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A9F77A482D52C91500F61931 /* Test_exam_kamel_alaghbari.xcdatamodel */,
+			);
+			currentVersion = A9F77A482D52C91500F61931 /* Test_exam_kamel_alaghbari.xcdatamodel */;
+			path = Test_exam_kamel_alaghbari.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A9321A2D2D5239F700B9D002 /* Project object */;
+}
