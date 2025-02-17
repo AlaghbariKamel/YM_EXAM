@@ -15,3 +15,8 @@ enum LocalizationKey {
     static let others = "others"
     static let new = "new"
 }
+
+
+protocol Localizable {
+    func updateLocalization()
+}

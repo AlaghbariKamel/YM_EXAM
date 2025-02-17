@@ -365,32 +365,33 @@ extension StringProtocol {
 
 
 
+ 
+
 class CustomUISegmentedControl: UISegmentedControl
 {
-    
+    var getLocalizedTitle: String? {
+        return labelText
+    }
+   
     @IBInspectable var labelText: String? = "" {
         didSet {
+             guard let labelText = labelText, !labelText.isEmpty else { return }
             
-            let str = labelText?.components(separatedBy: ";")
-            
-            if (str?.count)! > 0
-            {
-                for i in 0..<str!.count
-                {
-                    
-                    if str?[i].trimmingCharacters(in: .whitespacesAndNewlines).isEmpty == false
-                    {
-                     
-                        
-                        setTitle(str![i].localized, forSegmentAt: i)
-                    }
-                    
+             let str = labelText.components(separatedBy: ";").filter { !$0.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
+
+             guard !str.isEmpty else { return }
+
+            for (index, title) in str.enumerated() {
+                let localizedTitle = title.localized
+                if index < numberOfSegments {
+                    setTitle(localizedTitle, forSegmentAt: index)
                 }
             }
-            
         }
     }
     
+     
+   
     override open func willMove(toSuperview newSuperview: UIView?) {
         //        super.willMove(toSuperview: newSuperview)
         
@@ -511,8 +512,11 @@ extension URL: FilePathConvertible {
 
 
 @IBDesignable
-class CustomButton: UIButton {
+class CustomButton: UIButton, Localizable {
 
+    var getLocalizedText: String? {
+        return localize
+    }
     @IBInspectable
     var flippedForRightToLeftLayoutDirection: Bool = false {
         didSet {
@@ -527,13 +531,26 @@ class CustomButton: UIButton {
         didSet {
             guard let localize = localize, !localize.isEmpty else { return }
             let localizedText = localize.localized
-            setTitle(localizedText, for: .normal)
+            setTitle(localize, for: .normal)
             setTitle(localizedText, for: .disabled)
             if changeFontSize {
                 updateAttributedTitle(with: localizedText)
             }
         }
     }
+    
+    func updateLocalization() {
+
+        guard let localize = localize, !localize.isEmpty else { return }
+        let localizedText = localize.localized
+        setTitle(localizedText, for: .normal)
+        setTitle(localizedText, for: .disabled)
+        if changeFontSize {
+            updateAttributedTitle(with: localizedText)
+        }
+        print(localizedText)
+        
+       }
 
     @IBInspectable var changeFontSize: Bool = false {
         didSet {
@@ -715,18 +732,33 @@ class CustomTextField: UITextField {
 
 
 @IBDesignable
-class CustomLabel: UILabel {
+class CustomLabel: UILabel, Localizable {
+    
+    var getLocalizedText: String? {
+        return localize
+    }
     
     @IBInspectable var localize: String? = "" {
         didSet {
             if let labelText = localize,!labelText.isEmpty
             {
                 self.text = labelText.localized
+                self.setNeedsDisplay() // تأكد من تحديث واجهة المستخدم
+                
             }
             
         }
     }
     
+     
+    func updateLocalization() {
+
+        if let labelText = localize, !labelText.isEmpty {
+            
+               self.text = labelText.localized
+               
+           }
+       }
     
     var padding: UIEdgeInsets {
         get {
@@ -745,6 +777,7 @@ class CustomLabel: UILabel {
         super.sizeToFit()
         bounds.size.width += 2 * paddingValue
     }
+    
     
     override func drawText(in rect: CGRect) {
       
@@ -784,6 +817,7 @@ class CustomLabel: UILabel {
         super.init(frame: frame)
         
     }
+    
     
     
     
@@ -902,5 +936,40 @@ extension UIImageView {
         
         guard let newCGImage = ctx.makeImage() else { return nil }
         return UIImage.init(cgImage: newCGImage, scale: 1, orientation: .up)
+    }
+}
+
+
+extension Notification.Name {
+    static let languageChanged = Notification.Name("languageChanged")
+}
+
+
+extension UIView {
+    func updateLocalizationKey()
+    {
+        for subview in subviews {
+            if let button = subview as? CustomButton {
+                if let title = button.title(for: .normal) {
+                    print(title)
+                    button.setTitle(button.getLocalizedText?.localized, for: .normal)
+                    button.setTitle(button.getLocalizedText?.localized, for: .selected)
+                    button.setTitle(button.getLocalizedText?.localized, for: .application)
+                }
+            }
+            else if let segment = subview as? CustomUISegmentedControl {
+                segment.labelText = segment.getLocalizedTitle
+            }
+            else if let label = subview as? CustomLabel {
+                label.text = label.getLocalizedText?.localized
+            } else if let textView = subview as? UITextView {
+                textView.text = textView.text?.localized
+            } else if let textField = subview as? CustomTextField {
+                textField.placeholder = textField.placeholder?.localized
+            }
+            
+            // التكرار عبر subviews الفرعية
+            subview.updateLocalizationKey()
+        }
     }
 }

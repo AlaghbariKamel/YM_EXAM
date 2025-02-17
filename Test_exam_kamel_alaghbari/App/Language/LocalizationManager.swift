@@ -112,6 +112,9 @@ class LocalizationManager: NSObject {
         UIView.appearance().semanticContentAttribute = semantic
         UINavigationBar.appearance().semanticContentAttribute = semantic
         
+           
+        
+
         delegate?.resetApp()
     }
     
@@ -132,6 +135,14 @@ class LocalizationManager: NSObject {
         }
         resetApp()
     }
+    
+    
+  
+     
+
+       
+    
+
 }
 
 extension String
