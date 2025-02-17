@@ -28,6 +28,8 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        NotificationCenter.default.addObserver(self, selector: #selector(languageChanged), name: .languageChanged, object: nil)
+
         viewModel = OrderViewModel()
         
        
@@ -51,6 +53,67 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         
     }
     
+    @objc func languageChanged() {
+        // تحديث جميع العناصر المخصصة
+        updateLocalizationForAllControls()
+    }
+
+    func updateLocalization() {
+       
+    }
+    func updateLocalizationForAllControls() {
+        print(#file, #function)
+        // تحديث النصوص
+//        for subview in view.subviews {
+//            if let localizableSubview = subview as?  UIButton {
+//                if let title = localizableSubview.title(for: .normal) {
+//                    localizableSubview.setTitle(title.localized, for: .normal)
+//                }
+//            }
+//            if let localizableSubview = subview as? Localizable {
+//                localizableSubview.updateLocalization()
+//            }
+//        }
+        
+        if self.viewIfLoaded?.window != nil {
+            
+            self.view.updateLocalizationKey()
+        } else {
+             print("The view is not loaded yet.")
+        }
+
+        // تحديث الاتجاهات
+        let direction: UISemanticContentAttribute = (SharedDefault.languageKey == "ar") ? .forceRightToLeft : .forceLeftToRight
+        print(direction.rawValue.description)
+
+        // تحديث الـ appearance global
+//        UIView.appearance().semanticContentAttribute = direction
+//        UINavigationBar.appearance().semanticContentAttribute = direction
+//        UITabBar.appearance().semanticContentAttribute = direction
+//
+//        // تحديث الـ ViewController
+//        self.view.semanticContentAttribute = direction
+
+        // إعادة تحميل الواجهة لتحديث العناصر
+//        DispatchQueue.main.async {
+//            self.view.setNeedsLayout()
+//            self.view.layoutIfNeeded()
+//            UIApplication.shared.windows.first?.semanticContentAttribute = direction
+
+//        }
+
+                    UIApplication.shared.getActiveMainKeyWindow?.reload()
+
+       
+    }
+
+    override func viewDidLayoutSubviews() {
+        
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .languageChanged, object: nil)
+    }
     
     func flipLogoImage()
     
@@ -148,7 +211,7 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     
     
-    @objc  private func fetchOrderData() {
+    @objc private func fetchOrderData() {
         
         if viewModel?.getOrderCount() == 0 {
             
@@ -284,30 +347,38 @@ extension OrderVC: LocalizationDelegate {
         {
             
             oldLanguage = SharedDefault.languageKey
-            segmnetOrders.labelText = "new;others"
+//            segmnetOrders.labelText = "new;others"
             flipLogoImage()
             deliveryBill.removeAll()
             fetchOrderData()
-            UIApplication.shared.getActiveMainKeyWindow?.reload()
+//            UIApplication.shared.getActiveMainKeyWindow?.reload()
+            
+            
+            NotificationCenter.default.post(name: .languageChanged, object: nil)
+            // تحديث الاتجاه بناءً على اللغة
+    
            
-          
+//
+           
         }
     }
 }
    
 
 extension OrderVC: IAlertDialogLanguage {
-    func setLanguage(isLanguageUpdated: Bool)
-    {
-        if isLanguageUpdated
-        {
-            if LocalizationManager.shared.getLanguage() == .Arabic {
+
+    
+    func setLanguage(isLanguageUpdated: Bool) {
+        if isLanguageUpdated {
+            let currentLanguage = LocalizationManager.shared.getLanguage()
+            
+            if currentLanguage == .Arabic {
                 LocalizationManager.shared.setLanguage(language: .English)
             } else {
                 LocalizationManager.shared.setLanguage(language: .Arabic)
             }
+            
+          
         }
     }
-    
-    
 }

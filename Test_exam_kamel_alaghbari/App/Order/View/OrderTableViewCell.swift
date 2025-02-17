@@ -61,7 +61,9 @@ class OrderTableViewCell: UITableViewCell {
     {
         didSet {
            
-                lbStatus.text = varlbStatus
+          
+               
+            lbStatus.text = varlbStatus
             
             if(lbStatus.text == DeliveryStatusType.new.rawValue)
             {
@@ -75,11 +77,11 @@ class OrderTableViewCell: UITableViewCell {
                 lbStatus.textColor = UIColor.init(hexaString: "#707070")
                 statusView.backgroundColor = UIColor.init(hexaString: "#707070")
             }
-            else if(lbStatus.text == DeliveryStatusType.fullReturn.rawValue)
+            else if(lbStatus.text == DeliveryStatusType.fullReturn.rawValue || lbStatus.text == DeliveryStatusType.partialReturn.rawValue)
             {
-                
-                lbStatus.text = DeliveryStatusType.fullReturn.description
-                
+                if let status = DeliveryStatusType(rawValue: lbStatus.text!) {
+                       lbStatus.text = status.description
+                   }
                 lbStatus.textColor = UIColor.init(hexaString: "#D42A0F")
                 statusView.backgroundColor = UIColor.init(hexaString: "#D42A0F")
             }
@@ -114,13 +116,12 @@ class OrderTableViewCell: UITableViewCell {
         
         if SharedDefault.languageKey == LocalizationManager.LanguageApp.Arabic.rawValue {
            
-            self.statusView.roundCorners(corners: [.topLeft,.bottomLeft], radius: 16.0)
+            self.statusView.roundCorners(corners: [.topLeft,.bottomLeft], radius: 12.0)
         }
         else {
-            self.statusView.roundCorners(corners: [.topRight,.bottomRight], radius: 16.0)
+            self.statusView.roundCorners(corners: [.topRight,.bottomRight], radius: 12.0)
         }
      
-            
        
          
     }

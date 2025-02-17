@@ -46,7 +46,7 @@ enum DeliveryStatusType: String {
         case .delivered:
             return "Delivered"
         case .partialReturn:
-            return "مردود جزئي"
+            return "Partial Return"
         case .fullReturn:
             return "Returned"
         }

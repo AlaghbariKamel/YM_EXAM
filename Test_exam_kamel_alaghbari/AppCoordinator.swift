@@ -29,7 +29,7 @@ class AppCoordinator {
     {
         
        
-       let vc = SplashVC.instantiate(fromAppStoryboard: .Splash)
+        let vc = OrderVC.instantiate(fromAppStoryboard: .Order)
  
         let nav = UINavigationController(rootViewController: vc)
         vc.navigationController?.navigationBar.backgroundColor = UIColor.secondarySystemGroupedBackground
