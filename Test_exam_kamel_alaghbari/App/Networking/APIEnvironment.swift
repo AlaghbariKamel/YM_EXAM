@@ -20,7 +20,6 @@ enum APIEnvironment {
         switch self {
         case .development, .production, .staging:
             return  "mdev.yemensoft.net:473/OnyxDeliveryService/Service.svc"
-//            return "jsonplaceholder.typicode.com"
         
         }
     }

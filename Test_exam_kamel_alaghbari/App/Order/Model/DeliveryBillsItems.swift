@@ -36,7 +36,7 @@ import Foundation
 // MARK: - DeliveryBillsItems
 struct DeliveryBillsItems: Codable {
     let data: DeliveryData
-    let result: ResultResponse
+    let result: ResultResponse? = nil
 
     enum CodingKeys: String, CodingKey {
         case data = "Data"

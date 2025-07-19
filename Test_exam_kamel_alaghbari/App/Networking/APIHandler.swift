@@ -18,11 +18,6 @@ public enum HTTPMethod: String {
     case delete = "DELETE"
 }
 
- 
-
-
-
-
 protocol RequestHandler {
     
     associatedtype RequestDataType

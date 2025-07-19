@@ -15,6 +15,8 @@
 		A95A389B2D54203D00C535F7 /* LocalizationKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A389A2D54203B00C535F7 /* LocalizationKey.swift */; };
 		A95A389D2D5420AB00C535F7 /* SharedDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95A389C2D5420A000C535F7 /* SharedDefault.swift */; };
 		A95A38A22D54228C00C535F7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A95A38A02D54228C00C535F7 /* Localizable.strings */; };
+		A97EB9052E2B0B8700B22E9D /* OrderMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EB9042E2B0B8200B22E9D /* OrderMapper.swift */; };
+		A97EB9072E2B0C0300B22E9D /* DeliveryBillDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EB9062E2B0C0300B22E9D /* DeliveryBillDB.swift */; };
 		A9DA98D02D533E7500A3A436 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA98CD2D533E7500A3A436 /* SplashVC.swift */; };
 		A9DA98D32D53408400A3A436 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DA98D22D53408400A3A436 /* LoginVC.swift */; };
 		A9DA98D52D53409300A3A436 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DA98D42D53409300A3A436 /* Login.storyboard */; };
@@ -110,6 +112,8 @@
 		A95A389C2D5420A000C535F7 /* SharedDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDefault.swift; sourceTree = "<group>"; };
 		A95A38A12D54228C00C535F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A95A38A32D5423B700C535F7 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A97EB9042E2B0B8200B22E9D /* OrderMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMapper.swift; sourceTree = "<group>"; };
+		A97EB9062E2B0C0300B22E9D /* DeliveryBillDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryBillDB.swift; sourceTree = "<group>"; };
 		A9DA98CD2D533E7500A3A436 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		A9DA98D22D53408400A3A436 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A9DA98D42D53409300A3A436 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -359,7 +363,9 @@
 		A9E40EEF2D538D0200393A2D /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				A97EB9042E2B0B8200B22E9D /* OrderMapper.swift */,
 				A9E40EF22D538D4F00393A2D /* DbResult.swift */,
+				A97EB9062E2B0C0300B22E9D /* DeliveryBillDB.swift */,
 				A9E40EF02D538D0900393A2D /* OrderEntity.swift */,
 			);
 			path = DB;
@@ -654,9 +660,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests/Pods-Test_exam_kamel_alaghbari-Test_exam_kamel_alaghbariUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -715,9 +725,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Test_exam_kamel_alaghbari/Pods-Test_exam_kamel_alaghbari-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Test_exam_kamel_alaghbari/Pods-Test_exam_kamel_alaghbari-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -763,6 +777,7 @@
 				A9E40ECE2D53696600393A2D /* OrderVC.swift in Sources */,
 				A9F77A8D2D52C9C300F61931 /* APIPath.swift in Sources */,
 				A9F77A8E2D52C9C300F61931 /* NetworkPostModel.swift in Sources */,
+				A97EB9072E2B0C0300B22E9D /* DeliveryBillDB.swift in Sources */,
 				A9F77A8F2D52C9C300F61931 /* APITarget.swift in Sources */,
 				A9DA98D92D5341B200A3A436 /* CustomUI.swift in Sources */,
 				A9E40EE82D53808D00393A2D /* OrderRequest.swift in Sources */,
@@ -782,6 +797,7 @@
 				A9F77A502D52C91500F61931 /* UsersViewController.swift in Sources */,
 				A9E40EBB2D535B9300393A2D /* OrderTableViewCell.swift in Sources */,
 				A9F77A9F2D52D83A00F61931 /* InternetConnectionManager.swift in Sources */,
+				A97EB9052E2B0B8700B22E9D /* OrderMapper.swift in Sources */,
 				A9E40EDC2D5376D600393A2D /* LoginViewModel.swift in Sources */,
 				A9E40ED52D5373FC00393A2D /* APILoginNetwork.swift in Sources */,
 			);

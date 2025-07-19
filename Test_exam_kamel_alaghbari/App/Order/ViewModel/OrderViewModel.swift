@@ -11,15 +11,26 @@ import RxCocoa
 import RxSwift
 import RealmSwift
 
-class OrderViewModel {
+final class OrderViewModel {
     
     
+    var database: DbResult?
+    var notificationToken: NotificationToken? = nil
     
+   private var orderResults: Results<OrderEntity>?
+//   private var loadedData: [OrderEntity] = []
+      
+    init()
+    {
+        
+        database = DbResult.shared
+        loadData()
+    }
     var loadingBehavior = BehaviorRelay<Bool>(value: false)
     
-    private var orderModelSubject = PublishSubject<DeliveryBillsItems?>()
+    private var orderModelSubject = PublishSubject<Int>()
     
-    var orderModelObservable: Observable<DeliveryBillsItems?> {
+    var orderModelObservable: Observable<Int> {
         return orderModelSubject
     }
      
@@ -29,6 +40,10 @@ class OrderViewModel {
         return messageError
     }
     
+    private func loadData() {
+        orderResults = database?.getOrders()
+        observeChanges()
+    }
     
     func getOrders(orderReuest:OrderReuest)
     {
@@ -57,12 +72,13 @@ class OrderViewModel {
                 
                 guard let model = resposne else { return }
                 
-                orderModelSubject.onNext(model)
-                if(DbResult.shared.getOrderCount() == 0)
+                if(database!.getOrderCount() == 0)
                 {
-                    updateCachingTabel(list: model.data.deliveryBills)
+                    let orders = OrderMapper.map(model.data.deliveryBills)
+                    database!.addOrders(orders)
+//                    updateCachingTabel(list: model.data.deliveryBills)
                 }
-               
+                orderModelSubject.onNext(model.data.deliveryBills.count)
                 
             case .failure(let error):
                 
@@ -78,43 +94,48 @@ class OrderViewModel {
     }
     
     func getNewOrderList()->[DeliveryBillDB] {
-        return DbResult.shared.getNewOrders()
+        return database!.getNewOrders()
     }
     
     func getOrderCount()-> Int {
-        return DbResult.shared.getOrderCount()
+        return database!.getOrderCount()
     }
     
     
     func getOtherOrderList(orderStatus: String = "0")->[DeliveryBillDB] {
-        return DbResult.shared.getOtherStatusOrders(orderStatus: orderStatus)
+        return database!.getOtherStatusOrders(orderStatus: orderStatus)
     }
     
     
-    func updateCachingTabel( list: [DeliveryBill]?) {
-        
-        if let listData = list , listData.count > 0
-        {
-            
-            let realm = try? Realm()
-            for item in list ?? []
-            {
+ 
+
+    deinit {
+        notificationToken?.invalidate()
+    }
     
+    private func observeChanges() {
+        notificationToken = orderResults?.observe { [weak self] changes in
+            guard let self = self else { return }
+            
+            switch changes {
+            case .initial(let results):
                 
-                let dataTable = OrderEntity()
-                dataTable.OrderId = Int(item.billSrl ?? "0") ?? 0
-                dataTable.OrderStatus = item.dlvryStatusFlg ?? ""
-                dataTable.OrdeTotalPrice = item.billAmt ?? ""
-                dataTable.OrderDate = item.billDate  ?? ""
                 
-                do {
-                    
-                    try realm!.write { realm!.add(dataTable)}
-                    
-                }
-                catch  { print("Error inistiallising new realm, \(error)") }
+                self.orderModelSubject.onNext(results.count)
+                
+                
+            case .update(let results, _, _, _):
+                
+                self.orderModelSubject.onNext(results.count)
+                
+            case .error(let error):
+                print("❌ Realm error: \(error.localizedDescription)")
             }
         }
+     
+        
+         
+
     }
                  
 }
