@@ -50,7 +50,6 @@ class SetLanguageVC: UIViewController {
                 callBackOkButton?(selectedLanguage)
             }
             
-//            self.dismiss(animated: true)
         }
         
         sender.isEnabled = false

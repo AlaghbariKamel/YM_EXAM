@@ -14,7 +14,7 @@ class TimerApplication: UIApplication {
     // such as disconnecting the user
     private  var timeoutInSeconds: TimeInterval {
         // 3 minutes
-        return 2 * 60
+        return 3 * 60
     }
 
     private var idleTimer: Timer?

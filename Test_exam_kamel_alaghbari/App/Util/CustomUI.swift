@@ -968,7 +968,6 @@ extension UIView {
                 textField.placeholder = textField.placeholder?.localized
             }
             
-            // التكرار عبر subviews الفرعية
             subview.updateLocalizationKey()
         }
     }

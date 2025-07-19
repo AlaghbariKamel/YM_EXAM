@@ -54,26 +54,12 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     }
     
     @objc func languageChanged() {
-        // تحديث جميع العناصر المخصصة
         updateLocalizationForAllControls()
     }
 
-    func updateLocalization() {
-       
-    }
+   
     func updateLocalizationForAllControls() {
-        print(#file, #function)
-        // تحديث النصوص
-//        for subview in view.subviews {
-//            if let localizableSubview = subview as?  UIButton {
-//                if let title = localizableSubview.title(for: .normal) {
-//                    localizableSubview.setTitle(title.localized, for: .normal)
-//                }
-//            }
-//            if let localizableSubview = subview as? Localizable {
-//                localizableSubview.updateLocalization()
-//            }
-//        }
+
         
         if self.viewIfLoaded?.window != nil {
             
@@ -82,34 +68,10 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
              print("The view is not loaded yet.")
         }
 
-        // تحديث الاتجاهات
-        let direction: UISemanticContentAttribute = (SharedDefault.languageKey == "ar") ? .forceRightToLeft : .forceLeftToRight
-        print(direction.rawValue.description)
-
-        // تحديث الـ appearance global
-//        UIView.appearance().semanticContentAttribute = direction
-//        UINavigationBar.appearance().semanticContentAttribute = direction
-//        UITabBar.appearance().semanticContentAttribute = direction
-//
-//        // تحديث الـ ViewController
-//        self.view.semanticContentAttribute = direction
-
-        // إعادة تحميل الواجهة لتحديث العناصر
-//        DispatchQueue.main.async {
-//            self.view.setNeedsLayout()
-//            self.view.layoutIfNeeded()
-//            UIApplication.shared.windows.first?.semanticContentAttribute = direction
-
-//        }
-
-                    UIApplication.shared.getActiveMainKeyWindow?.reload()
-
        
     }
 
-    override func viewDidLayoutSubviews() {
-        
-    }
+ 
 
     deinit {
         NotificationCenter.default.removeObserver(self, name: .languageChanged, object: nil)
@@ -182,21 +144,24 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
             DispatchQueue.main.async {
                 
                 self.refreshControl.endRefreshing()
-                
-                if let result = result,result.data.deliveryBills.count > 0
+             
+                if  result  > 0
                 {
-                   
+                    
                     self.emptyOrderView.isHidden = true
                     self.tableViewOrder.isHidden = false
+                    
                     if self.segmnetOrders.selectedSegmentIndex == 0   {
                         self.deliveryBill = self.viewModel?.getNewOrderList() ?? []
                     }
                     else{
                         self.deliveryBill = self.viewModel?.getOtherOrderList() ?? []
                     }
-                   
+               
                     self.tableViewOrder.reloadData()
-                    print(result)
+                    
+                    print(self.deliveryBill.count)
+//                    print(result)
                     
                 }
                 else {
@@ -213,7 +178,8 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     @objc private func fetchOrderData() {
         
-        if viewModel?.getOrderCount() == 0 {
+        if viewModel?.getOrderCount() == 0
+        {
             
             
             let orderValue = OrderValue(pDlvryNo: "1010", pLangNo: "1", pBillSrl: "", pPrcssdFlg: "")
@@ -233,6 +199,7 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         }
         else{
             self.deliveryBill = self.viewModel?.getNewOrderList() ?? []
+            
             tableViewOrder.reloadData()
         }
     }
@@ -347,18 +314,17 @@ extension OrderVC: LocalizationDelegate {
         {
             
             oldLanguage = SharedDefault.languageKey
-//            segmnetOrders.labelText = "new;others"
             flipLogoImage()
+            
             deliveryBill.removeAll()
+            tableViewOrder.reloadData()
             fetchOrderData()
-//            UIApplication.shared.getActiveMainKeyWindow?.reload()
+            
+            UIApplication.shared.getActiveMainKeyWindow?.reload()
             
             
             NotificationCenter.default.post(name: .languageChanged, object: nil)
-            // تحديث الاتجاه بناءً على اللغة
-    
-           
-//
+
            
         }
     }
