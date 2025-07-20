@@ -30,18 +30,20 @@ class AppCoordinator {
         
        
         let vc = OrderVC.instantiate(fromAppStoryboard: .Order)
- 
+        
         let nav = UINavigationController(rootViewController: vc)
-        vc.navigationController?.navigationBar.backgroundColor = UIColor.secondarySystemGroupedBackground
+        vc.navigationController?.navigationBar.backgroundColor = .clear//UIColor.secondarySystemGroupedBackground
         vc.navigationController?.navigationBar.tintColor = .systemRed
-      
+       
         let appearance = UINavigationBarAppearance()
         appearance.configureWithTransparentBackground()
+        
         vc.navigationController?.navigationBar.standardAppearance = appearance
         
         window.rootViewController = nav
-        window.makeKeyAndVisible()
  
+        window.makeKeyAndVisible()
+        
     }
 }
 

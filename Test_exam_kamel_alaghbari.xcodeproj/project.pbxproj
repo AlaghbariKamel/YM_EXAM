@@ -45,34 +45,23 @@
 		A9E40EFA2D5392F900393A2D /* CheckAppLogout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E40EF92D5392F300393A2D /* CheckAppLogout.swift */; };
 		A9F77A492D52C91500F61931 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A392D52C91500F61931 /* AppCoordinator.swift */; };
 		A9F77A4A2D52C91500F61931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A3A2D52C91500F61931 /* AppDelegate.swift */; };
-		A9F77A4B2D52C91500F61931 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A412D52C91500F61931 /* NetworkManager.swift */; };
 		A9F77A4C2D52C91500F61931 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A422D52C91500F61931 /* SceneDelegate.swift */; };
-		A9F77A4E2D52C91500F61931 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A442D52C91500F61931 /* User.swift */; };
-		A9F77A4F2D52C91500F61931 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A452D52C91500F61931 /* UserDetailsViewController.swift */; };
-		A9F77A502D52C91500F61931 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A462D52C91500F61931 /* UsersViewController.swift */; };
 		A9F77A512D52C91500F61931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F77A3B2D52C91500F61931 /* Assets.xcassets */; };
 		A9F77A532D52C91500F61931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F77A3E2D52C91500F61931 /* LaunchScreen.storyboard */; };
 		A9F77A542D52C91500F61931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F77A402D52C91500F61931 /* Main.storyboard */; };
 		A9F77A552D52C91500F61931 /* Test_exam_kamel_alaghbari.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A432D52C91500F61931 /* Test_exam_kamel_alaghbari.xcdatamodeld */; };
-		A9F77A872D52C9C300F61931 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A822D52C9C300F61931 /* PostViewModel.swift */; };
-		A9F77A882D52C9C300F61931 /* ResponsePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A802D52C9C300F61931 /* ResponsePost.swift */; };
 		A9F77A892D52C9C300F61931 /* ResponseHandler+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A7B2D52C9C300F61931 /* ResponseHandler+Extension.swift */; };
 		A9F77A8A2D52C9C300F61931 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A7C2D52C9C300F61931 /* ServiceError.swift */; };
 		A9F77A8C2D52C9C300F61931 /* RequestHandler+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A7A2D52C9C300F61931 /* RequestHandler+Extension.swift */; };
 		A9F77A8D2D52C9C300F61931 /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A782D52C9C300F61931 /* APIPath.swift */; };
-		A9F77A8E2D52C9C300F61931 /* NetworkPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A7E2D52C9C300F61931 /* NetworkPostModel.swift */; };
 		A9F77A8F2D52C9C300F61931 /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A792D52C9C300F61931 /* APITarget.swift */; };
-		A9F77A902D52C9C300F61931 /* PostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A7F2D52C9C300F61931 /* PostAPI.swift */; };
 		A9F77A912D52C9C300F61931 /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A752D52C9C300F61931 /* APIEnvironment.swift */; };
 		A9F77A922D52C9C300F61931 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A762D52C9C300F61931 /* APIHandler.swift */; };
 		A9F77A932D52C9C300F61931 /* APILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A772D52C9C300F61931 /* APILoader.swift */; };
 		A9F77A952D52CAF000F61931 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A942D52CAED00F61931 /* APIConstant.swift */; };
 		A9F77A982D52D3D000F61931 /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A972D52D3BA00F61931 /* JsonData.swift */; };
-		A9F77A9B2D52D5C600F61931 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A9A2D52D5C300F61931 /* PostsViewController.swift */; };
 		A9F77A9D2D52D80200F61931 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A9C2D52D7F800F61931 /* AlertMessage.swift */; };
 		A9F77A9F2D52D83A00F61931 /* InternetConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77A9E2D52D83700F61931 /* InternetConnectionManager.swift */; };
-		A9F77AAD2D52E02B00F61931 /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77AAC2D52E02600F61931 /* PostDetailsViewController.swift */; };
-		A9F77AAF2D52E27600F61931 /* PostEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F77AAE2D52E27400F61931 /* PostEntryViewController.swift */; };
 		CAB3AB925AD1B8F33E06A555 /* Pods_Test_exam_kamel_alaghbariTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2135829386E3DE114337B3A0 /* Pods_Test_exam_kamel_alaghbariTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -146,11 +135,7 @@
 		A9F77A3C2D52C91500F61931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9F77A3D2D52C91500F61931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9F77A3F2D52C91500F61931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A9F77A412D52C91500F61931 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A9F77A422D52C91500F61931 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A9F77A442D52C91500F61931 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		A9F77A452D52C91500F61931 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
-		A9F77A462D52C91500F61931 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		A9F77A482D52C91500F61931 /* Test_exam_kamel_alaghbari.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test_exam_kamel_alaghbari.xcdatamodel; sourceTree = "<group>"; };
 		A9F77A752D52C9C300F61931 /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
 		A9F77A762D52C9C300F61931 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
@@ -160,17 +145,10 @@
 		A9F77A7A2D52C9C300F61931 /* RequestHandler+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RequestHandler+Extension.swift"; sourceTree = "<group>"; };
 		A9F77A7B2D52C9C300F61931 /* ResponseHandler+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResponseHandler+Extension.swift"; sourceTree = "<group>"; };
 		A9F77A7C2D52C9C300F61931 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
-		A9F77A7E2D52C9C300F61931 /* NetworkPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPostModel.swift; sourceTree = "<group>"; };
-		A9F77A7F2D52C9C300F61931 /* PostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAPI.swift; sourceTree = "<group>"; };
-		A9F77A802D52C9C300F61931 /* ResponsePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsePost.swift; sourceTree = "<group>"; };
-		A9F77A822D52C9C300F61931 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		A9F77A942D52CAED00F61931 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
 		A9F77A972D52D3BA00F61931 /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
-		A9F77A9A2D52D5C300F61931 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		A9F77A9C2D52D7F800F61931 /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
 		A9F77A9E2D52D83700F61931 /* InternetConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionManager.swift; sourceTree = "<group>"; };
-		A9F77AAC2D52E02600F61931 /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
-		A9F77AAE2D52E27400F61931 /* PostEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntryViewController.swift; sourceTree = "<group>"; };
 		C132DF1A1A297104F6AC513F /* Pods-Test_exam_kamel_alaghbariTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_exam_kamel_alaghbariTests.release.xcconfig"; path = "Target Support Files/Pods-Test_exam_kamel_alaghbariTests/Pods-Test_exam_kamel_alaghbariTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -392,7 +370,6 @@
 				A9DA98CC2D533E4700A3A436 /* Splash */,
 				A9F77A962D52D3B300F61931 /* Util */,
 				A9F77A7D2D52C9C300F61931 /* Networking */,
-				A9F77A842D52C9C300F61931 /* Post */,
 				A95A38A02D54228C00C535F7 /* Localizable.strings */,
 			);
 			path = App;
@@ -408,12 +385,8 @@
 				A9F77A3C2D52C91500F61931 /* Info.plist */,
 				A9F77A3E2D52C91500F61931 /* LaunchScreen.storyboard */,
 				A9F77A402D52C91500F61931 /* Main.storyboard */,
-				A9F77A412D52C91500F61931 /* NetworkManager.swift */,
 				A9F77A422D52C91500F61931 /* SceneDelegate.swift */,
 				A9F77A432D52C91500F61931 /* Test_exam_kamel_alaghbari.xcdatamodeld */,
-				A9F77A442D52C91500F61931 /* User.swift */,
-				A9F77A452D52C91500F61931 /* UserDetailsViewController.swift */,
-				A9F77A462D52C91500F61931 /* UsersViewController.swift */,
 			);
 			path = Test_exam_kamel_alaghbari;
 			sourceTree = "<group>";
@@ -434,33 +407,6 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		A9F77A812D52C9C300F61931 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A9F77A7E2D52C9C300F61931 /* NetworkPostModel.swift */,
-				A9F77A7F2D52C9C300F61931 /* PostAPI.swift */,
-				A9F77A802D52C9C300F61931 /* ResponsePost.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A9F77A832D52C9C300F61931 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				A9F77A822D52C9C300F61931 /* PostViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		A9F77A842D52C9C300F61931 /* Post */ = {
-			isa = PBXGroup;
-			children = (
-				A9F77A992D52D5BB00F61931 /* View */,
-				A9F77A832D52C9C300F61931 /* ViewModel */,
-			);
-			path = Post;
-			sourceTree = "<group>";
-		};
 		A9F77A962D52D3B300F61931 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,17 +417,6 @@
 				A9F77A972D52D3BA00F61931 /* JsonData.swift */,
 			);
 			path = Util;
-			sourceTree = "<group>";
-		};
-		A9F77A992D52D5BB00F61931 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A9F77AAE2D52E27400F61931 /* PostEntryViewController.swift */,
-				A9F77AAC2D52E02600F61931 /* PostDetailsViewController.swift */,
-				A9F77A9A2D52D5C300F61931 /* PostsViewController.swift */,
-				A9F77A812D52C9C300F61931 /* Model */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -750,51 +685,40 @@
 				A9E40EF62D53925900393A2D /* main.swift in Sources */,
 				A9F77A982D52D3D000F61931 /* JsonData.swift in Sources */,
 				A9F77A4A2D52C91500F61931 /* AppDelegate.swift in Sources */,
-				A9F77A4B2D52C91500F61931 /* NetworkManager.swift in Sources */,
 				A95A38972D541E7500C535F7 /* AlertLanguage.swift in Sources */,
 				A9F77A552D52C91500F61931 /* Test_exam_kamel_alaghbari.xcdatamodeld in Sources */,
 				A9F77A4C2D52C91500F61931 /* SceneDelegate.swift in Sources */,
 				A9E40EFA2D5392F900393A2D /* CheckAppLogout.swift in Sources */,
 				A9F77A952D52CAF000F61931 /* APIConstant.swift in Sources */,
-				A9F77A9B2D52D5C600F61931 /* PostsViewController.swift in Sources */,
-				A9F77A4E2D52C91500F61931 /* User.swift in Sources */,
 				A95A38992D541FF300C535F7 /* LocalizationManager.swift in Sources */,
 				A95A389B2D54203D00C535F7 /* LocalizationKey.swift in Sources */,
-				A9F77A4F2D52C91500F61931 /* UserDetailsViewController.swift in Sources */,
 				A9F77A9D2D52D80200F61931 /* AlertMessage.swift in Sources */,
 				A95A38952D541CE000C535F7 /* SetLanguageVC.swift in Sources */,
-				A9F77A872D52C9C300F61931 /* PostViewModel.swift in Sources */,
 				A9E40EF12D538D1100393A2D /* OrderEntity.swift in Sources */,
 				A9E40EF32D538D5400393A2D /* DbResult.swift in Sources */,
-				A9F77A882D52C9C300F61931 /* ResponsePost.swift in Sources */,
 				A9DA98D02D533E7500A3A436 /* SplashVC.swift in Sources */,
 				A9F77A892D52C9C300F61931 /* ResponseHandler+Extension.swift in Sources */,
-				A9F77AAF2D52E27600F61931 /* PostEntryViewController.swift in Sources */,
 				A9DA98D32D53408400A3A436 /* LoginVC.swift in Sources */,
 				A9E40EE42D537E8A00393A2D /* APIOrder.swift in Sources */,
 				A9F77A8A2D52C9C300F61931 /* ServiceError.swift in Sources */,
 				A9F77A8C2D52C9C300F61931 /* RequestHandler+Extension.swift in Sources */,
 				A9E40ECE2D53696600393A2D /* OrderVC.swift in Sources */,
 				A9F77A8D2D52C9C300F61931 /* APIPath.swift in Sources */,
-				A9F77A8E2D52C9C300F61931 /* NetworkPostModel.swift in Sources */,
 				A97EB9072E2B0C0300B22E9D /* DeliveryBillDB.swift in Sources */,
 				A9F77A8F2D52C9C300F61931 /* APITarget.swift in Sources */,
 				A9DA98D92D5341B200A3A436 /* CustomUI.swift in Sources */,
 				A9E40EE82D53808D00393A2D /* OrderRequest.swift in Sources */,
-				A9F77A902D52C9C300F61931 /* PostAPI.swift in Sources */,
 				A95A389D2D5420AB00C535F7 /* SharedDefault.swift in Sources */,
 				A9E40ECA2D5368B900393A2D /* LoadViews.swift in Sources */,
 				A9E40EF82D53928500393A2D /* TimerApplication.swift in Sources */,
 				A9E40EDE2D53777400393A2D /* LoginRequest.swift in Sources */,
 				A9E40ED32D5373F200393A2D /* APILogin.swift in Sources */,
-				A9F77AAD2D52E02B00F61931 /* PostDetailsViewController.swift in Sources */,
 				A9F77A912D52C9C300F61931 /* APIEnvironment.swift in Sources */,
 				A9F77A922D52C9C300F61931 /* APIHandler.swift in Sources */,
 				A9E40EE62D537FD200393A2D /* OrderViewModel.swift in Sources */,
 				A9E40EE22D537E8100393A2D /* APIOrderNetwork.swift in Sources */,
 				A9E40ED12D53718100393A2D /* DeliveryBillsItems.swift in Sources */,
 				A9F77A932D52C9C300F61931 /* APILoader.swift in Sources */,
-				A9F77A502D52C91500F61931 /* UsersViewController.swift in Sources */,
 				A9E40EBB2D535B9300393A2D /* OrderTableViewCell.swift in Sources */,
 				A9F77A9F2D52D83A00F61931 /* InternetConnectionManager.swift in Sources */,
 				A97EB9052E2B0B8700B22E9D /* OrderMapper.swift in Sources */,
