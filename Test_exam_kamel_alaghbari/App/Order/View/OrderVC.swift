@@ -28,6 +28,7 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         NotificationCenter.default.addObserver(self, selector: #selector(languageChanged), name: .languageChanged, object: nil)
 
         viewModel = OrderViewModel()
@@ -95,6 +96,7 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         refreshControl.addTarget(self, action: #selector(fetchOrderData), for: .valueChanged)
         tableViewOrder.refreshControl = refreshControl
         tableViewOrder.separatorStyle = .none
+        tableViewOrder.backgroundColor = .clear
          
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -143,9 +145,9 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
             guard let self = self else {return}
             DispatchQueue.main.async {
                 
-                self.refreshControl.endRefreshing()
+            self.refreshControl.endRefreshing()
              
-                if  result  > 0
+                if  result > 0
                 {
                     
                     self.emptyOrderView.isHidden = true
@@ -160,8 +162,6 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                
                     self.tableViewOrder.reloadData()
                     
-                    print(self.deliveryBill.count)
-//                    print(result)
                     
                 }
                 else {
@@ -176,7 +176,8 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     
     
-    @objc private func fetchOrderData() {
+    @objc private func fetchOrderData()
+    {
         
         if viewModel?.getOrderCount() == 0
         {
@@ -197,9 +198,18 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
             }
             
         }
-        else{
-            self.deliveryBill = self.viewModel?.getNewOrderList() ?? []
+        else
+        {
             
+           
+            
+            if self.segmnetOrders.selectedSegmentIndex == 0   {
+                self.deliveryBill = self.viewModel?.getNewOrderList() ?? []
+            }
+            else{
+                self.deliveryBill = self.viewModel?.getOtherOrderList() ?? []
+            }
+       
             tableViewOrder.reloadData()
         }
     }
@@ -213,27 +223,9 @@ class OrderVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
 
     @IBAction func segmentOrders(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0 {
-            
-           
-            
-//            segmnetOrders.setTitleForgourndColor(.white)
-//            segmnetOrders.selectedSegmentTintColor = UIColor.init(hexaString: "#004F62")
-            
-           
-            self.deliveryBill = self.viewModel?.getNewOrderList() ?? []
-            
-        }
-        else {
-            self.deliveryBill = self.viewModel?.getOtherOrderList() ?? []
-            
-        }
-        
-        self.tableViewOrder.reloadData()
-        
-        if self.deliveryBill.count == 0 {
-            self.fetchOrderData()
-        }
+       
+        fetchOrderData()
+         
     }
     
 
@@ -314,14 +306,15 @@ extension OrderVC: LocalizationDelegate {
         {
             
             oldLanguage = SharedDefault.languageKey
-            flipLogoImage()
             
+            let index = segmnetOrders.selectedSegmentIndex
+            
+            flipLogoImage()
             deliveryBill.removeAll()
             tableViewOrder.reloadData()
-            fetchOrderData()
-            
             UIApplication.shared.getActiveMainKeyWindow?.reload()
-            
+            segmnetOrders.selectedSegmentIndex = index
+            fetchOrderData()
             
             NotificationCenter.default.post(name: .languageChanged, object: nil)
 

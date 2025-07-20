@@ -12,9 +12,7 @@ enum AppStoryboard: String
 {
     
     case Splash = "Splash"
-    
     case Login = "Login"
-     
     case Order = "Order"
     case Language = "SetLanguage"
     
@@ -47,14 +45,6 @@ extension UIViewController {
    
     class var storyboardID: String {
        
-//        if "\(self)" == "LoginVCN"
-//        {
-//            SharedDefault.isInLoginKey = true
-//        }
-//        else
-//        {
-//            SharedDefault.isInLoginKey = false
-//        }
      
         return "\(self)"
     }

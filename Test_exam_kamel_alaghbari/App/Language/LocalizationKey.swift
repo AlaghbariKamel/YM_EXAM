@@ -14,6 +14,8 @@ enum LocalizationKey {
     static let showMore = "showMore"
     static let others = "others"
     static let new = "new"
+    static let applay = "applay"
+    
 }
 
 

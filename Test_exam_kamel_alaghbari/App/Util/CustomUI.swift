@@ -10,7 +10,6 @@ class MyCustomView: UIView {
     
     private var shadowLayer: CAShapeLayer!
     private var cornerRadiusShadow: CGFloat = 12.0
-    //    private var fillColor: UIColor = .lightGray // the color applied to the shadowLayer, rather than the view's backgroundColor
     
     
     @IBInspectable var setAsCircle: Bool = false {
@@ -99,7 +98,7 @@ class RoundShadowView: UIView
         
         // set the shadow of the view's layer
         layer.backgroundColor = UIColor.white.cgColor
-        layer.shadowColor = UIColor.label.cgColor
+        layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 1.0)
         layer.shadowOpacity = 0.2
         layer.shadowRadius = 4.0
@@ -236,12 +235,10 @@ extension UIViewController {
     {
         guard let window = self.view.window else { return }
         
- 
-        
         let nav = UINavigationController(rootViewController: vc)
         nav.navigationController?.navigationBar.tintColor = .white
         vc.navigationController?.navigationBar.isTranslucent = true
-         
+        vc.view.backgroundColor = .white
         
         
         let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize:  17),.foregroundColor: UIColor.white]
@@ -249,7 +246,7 @@ extension UIViewController {
         let appearance = UINavigationBarAppearance()
            appearance.configureWithTransparentBackground()
         vc.navigationController?.navigationBar.standardAppearance = appearance
-        vc.navigationController?.navigationBar.update(backroundColor: .white, titleColor: .white)
+//        vc.navigationController?.navigationBar.update(backroundColor: .white, titleColor: .white)
          view.window?.rootViewController = nav
 
         
@@ -531,8 +528,9 @@ class CustomButton: UIButton, Localizable {
         didSet {
             guard let localize = localize, !localize.isEmpty else { return }
             let localizedText = localize.localized
-            setTitle(localize, for: .normal)
+            setTitle(localizedText, for: .normal)
             setTitle(localizedText, for: .disabled)
+            setTitle(localizedText, for: .selected)
             if changeFontSize {
                 updateAttributedTitle(with: localizedText)
             }
@@ -545,10 +543,10 @@ class CustomButton: UIButton, Localizable {
         let localizedText = localize.localized
         setTitle(localizedText, for: .normal)
         setTitle(localizedText, for: .disabled)
+        setTitle(localizedText, for: .selected)
         if changeFontSize {
             updateAttributedTitle(with: localizedText)
         }
-        print(localizedText)
         
        }
 
@@ -742,9 +740,9 @@ class CustomLabel: UILabel, Localizable {
         didSet {
             if let labelText = localize,!labelText.isEmpty
             {
-                self.text = labelText.localized
-                self.setNeedsDisplay() // تأكد من تحديث واجهة المستخدم
-                
+                let localizedText = labelText.localized
+                self.text = localizedText
+                self.setNeedsDisplay()
             }
             
         }
@@ -752,9 +750,7 @@ class CustomLabel: UILabel, Localizable {
     
      
     func updateLocalization() {
-
         if let labelText = localize, !labelText.isEmpty {
-            
                self.text = labelText.localized
                
            }
@@ -951,7 +947,6 @@ extension UIView {
         for subview in subviews {
             if let button = subview as? CustomButton {
                 if let title = button.title(for: .normal) {
-                    print(title)
                     button.setTitle(button.getLocalizedText?.localized, for: .normal)
                     button.setTitle(button.getLocalizedText?.localized, for: .selected)
                     button.setTitle(button.getLocalizedText?.localized, for: .application)

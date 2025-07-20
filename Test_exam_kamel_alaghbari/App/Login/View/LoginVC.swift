@@ -18,11 +18,11 @@ class LoginVC: UIViewController {
     private var oldLanguage =  SharedDefault.languageKey
     
     
-    @IBOutlet weak var btnShowMore: UIButton!
-    @IBOutlet weak var lbLogBack: UILabel!
-    @IBOutlet weak var lbWlecomBack: UILabel!
+    @IBOutlet weak var btnShowMore: CustomButton!
+    @IBOutlet weak var lbLogBack: CustomLabel!
+    @IBOutlet weak var lbWlecomBack: CustomLabel!
     
-    @IBOutlet weak var buttonLogin: UIButton!
+    @IBOutlet weak var buttonLogin: CustomButton!
     @IBOutlet weak var txtUserId: UITextField!
     
     @IBOutlet weak var txtPassword: UITextField!

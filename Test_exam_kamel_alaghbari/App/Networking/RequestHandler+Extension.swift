@@ -62,7 +62,6 @@ extension TargetType {
     func makeRequest(target:TargetType) -> URLRequest? {
 //        let urlString =  APIPath().posts
         let urlString = "\(target.baseURL)\(target.path)"
-        print(urlString)
         if var url = URL(string: urlString) {
            
            

@@ -82,7 +82,6 @@ class DbResult  {
         var orders: [DeliveryBillDB] = []
         // Use compactMap to filter out nil or empty values
         let list = realm.objects(OrderEntity.self).filter({$0.OrderStatus == "0"})
-        print(list.count)
         for item in list {
             orders.append(DeliveryBillDB( billSrl: String(item.OrderId), billDate: item.OrderDate, billAmt: item.OrdeTotalPrice, dlvryStatusFlg: item.OrderStatus) )
         }
