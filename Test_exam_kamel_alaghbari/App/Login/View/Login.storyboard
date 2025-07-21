@@ -34,9 +34,6 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="globe" catalog="system"/>
                                 <buttonConfiguration key="configuration" style="plain" image="globe" catalog="system"/>
-                                <connections>
-                                    <action selector="btnSetLanuage:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="i80-7s-8Jv"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnxRestaurant_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ig4-pI-cIS">
                                 <rect key="frame" x="26" y="123" width="170" height="76"/>
@@ -114,6 +111,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Log in">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.0" green="0.30980392159999998" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
@@ -125,9 +123,6 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="localize" value="login"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="btnLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9jh-1h-H3a"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delivery" translatesAutoresizingMaskIntoConstraints="NO" id="bx3-FR-vxz">
                                 <rect key="frame" x="99" y="704" width="195" height="170"/>
@@ -192,6 +187,7 @@
                     <connections>
                         <outlet property="btnShowMore" destination="aVd-Xp-4mf" id="tQC-Nd-E4s"/>
                         <outlet property="buttonLogin" destination="Qwe-xW-fZW" id="5IV-NN-8OJ"/>
+                        <outlet property="buttonSetLanguage" destination="L8J-bN-e0W" id="3Jd-IX-TAq"/>
                         <outlet property="imgLogo" destination="TMl-Js-YDW" id="56E-bg-uaq"/>
                         <outlet property="lbLogBack" destination="7oI-dg-KM7" id="DIf-sQ-KYR"/>
                         <outlet property="lbWlecomBack" destination="dR0-ms-Evd" id="YW0-Ir-Jeq"/>

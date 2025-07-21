@@ -967,3 +967,38 @@ extension UIView {
         }
     }
 }
+
+ 
+
+private var clickTimestamps = [UIView: TimeInterval]()
+
+extension UIView {
+    func setOnSingleClick(interval: TimeInterval = 0.6, _ action: @escaping (UIView) -> Void) {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(handleSingleClick(_:)))
+        self.addGestureRecognizer(gesture)
+        self.isUserInteractionEnabled = true
+
+        objc_setAssociatedObject(self, &AssociatedKeys.actionKey, action, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        objc_setAssociatedObject(self, &AssociatedKeys.intervalKey, interval, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+    }
+    
+    @objc private func handleSingleClick(_ sender: UITapGestureRecognizer) {
+        guard let view = sender.view else { return }
+        
+        let currentTime = Date().timeIntervalSince1970
+        let lastClickTime = clickTimestamps[view] ?? 0
+        let interval = objc_getAssociatedObject(view, &AssociatedKeys.intervalKey) as? TimeInterval ?? 0.6
+        
+        if currentTime - lastClickTime > interval {
+            clickTimestamps[view] = currentTime
+            if let action = objc_getAssociatedObject(view, &AssociatedKeys.actionKey) as? (UIView) -> Void {
+                action(view)
+            }
+        }
+    }
+}
+
+private struct AssociatedKeys {
+    static var actionKey = "actionKey"
+    static var intervalKey = "intervalKey"
+}

@@ -18,6 +18,7 @@ class LoginVC: UIViewController {
     private var oldLanguage =  SharedDefault.languageKey
     
     
+    @IBOutlet weak var buttonSetLanguage: UIButton!
     @IBOutlet weak var btnShowMore: CustomButton!
     @IBOutlet weak var lbLogBack: CustomLabel!
     @IBOutlet weak var lbWlecomBack: CustomLabel!
@@ -39,6 +40,18 @@ class LoginVC: UIViewController {
        
         
         // Do any additional setup after loading the view.
+        
+        buttonLogin.setOnSingleClick(interval: 2) { [weak self] _ in
+             
+            guard let self = self else {return}
+            
+            self.submitLogin()
+        }
+        
+        buttonSetLanguage.setOnSingleClick(interval: 2) { [weak self] _ in
+            guard let self = self else {return}
+            AlertLanguage.sharedInstance.showalertSetLanguage(self)
+        }
     }
     
     func flipLogoImage()
@@ -144,37 +157,6 @@ class LoginVC: UIViewController {
     }
 
     
-    @IBAction func btnSetLanuage(_ sender: UIButton) {
-        
-         
-            // your code
-            
-            if sender.isEnabled {
-                
-                AlertLanguage.sharedInstance.showalertSetLanguage(self)
-            }
-            
-            sender.isEnabled = false
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                sender.isEnabled = true
-            }
-            
-         
-    }
-    
-    @IBAction func btnLogin(_ sender: UIButton) {
-        
-        if sender.isEnabled {
-            
-            submitLogin()
-        }
-        
-        sender.isEnabled = false
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            sender.isEnabled = true
-        }
-        
-    }
     
 
    
