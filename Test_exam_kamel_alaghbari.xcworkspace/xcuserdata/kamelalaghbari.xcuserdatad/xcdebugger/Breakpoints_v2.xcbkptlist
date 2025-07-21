@@ -16,7 +16,11 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "209"
             endingLineNumber = "209"
+<<<<<<< HEAD
             landmarkName = "resetAppLanguage()"
+=======
+            landmarkName = "setLanguage(isLanguageUpdated:)"
+>>>>>>> develop
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -32,7 +36,11 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "210"
             endingLineNumber = "210"
+<<<<<<< HEAD
             landmarkName = "resetAppLanguage()"
+=======
+            landmarkName = "setLanguage(isLanguageUpdated:)"
+>>>>>>> develop
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
