@@ -60,3 +60,4 @@ playground.xcworkspace
 
 # Firebase / GoogleService
 GoogleService-Info.plist
+*.xcuserdatad/
