@@ -36,7 +36,6 @@ This project follows **MVVM architecture** and applies design patterns to ensure
 - ✅ **Git Best Practices**  
   Clean commit history with meaningful messages and atomic commits.
 
-<<<<<<< HEAD
 
 
 ## 📱 Screenshots
@@ -51,27 +50,12 @@ This project follows **MVVM architecture** and applies design patterns to ensure
   <img src="https://github.com/AlaghbariKamel/YM_EXAM/blob/develop/screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-07-21%20at%2003.00.07.png" width="30%" />
 </p>
 
-=======
-
-## 📱 Screenshots
-
-<p align="center">
-  <img src="https://github.com/AlaghbariKamel/YM_EXAM/blob/develop/screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-07-21%20at%2002.58.16.png" width="30%" />
-  <img src="https://github.com/AlaghbariKamel/YM_EXAM/blob/develop/screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-07-21%20at%2002.59.54.png" width="30%" />
-  <img src="https://github.com/AlaghbariKamel/YM_EXAM/blob/develop/screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-07-21%20at%2003.00.07.png" width="30%" />
-</p>
-
->>>>>>> 5169756cbfafc12a6c835c56f1c1bbfdf1b7e516
 <p align="center">
   <img src="https://github.com/AlaghbariKamel/YM_EXAM/blob/develop/screenshots/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-07-21%20at%2003.00.14.png" width="30%" />
 </p>
 
 
-<<<<<<< HEAD
- 
 
-=======
->>>>>>> 5169756cbfafc12a6c835c56f1c1bbfdf1b7e516
 ## 🧱 Project Structure (MVVM)
 
 ```bash
